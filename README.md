@@ -310,9 +310,6 @@ The AI strictly follows these guidelines:
 Example AI response:
 > "I notice you're trying to find the maximum element. Think about this: what happens when you compare two numbers? How could you use that comparison as you go through each element?"
 
-## 📝 License
-
-MIT License - see [LICENSE](LICENSE) for details.
 
 ## 🤝 Contributing
 
