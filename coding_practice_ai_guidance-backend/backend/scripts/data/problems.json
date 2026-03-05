@@ -1,0 +1,4975 @@
+[
+  {
+    "title": "Sum of Two Numbers",
+    "description": "Write a program that takes two integers as input and prints their sum.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nWrite a program that takes two integers `A` and `B` as input and prints their sum.\n\n### Input Format\nTwo integers on separate lines.\n\n### Output Format\nA single integer representing the sum.\n\n### Example 1:\n```\nInput: A = 10, B = 5\nOutput: 15\n```\n\n### Example 2:\n```\nInput: A = -2, B = 8\nOutput: 6\n```",
+    "constraints": [
+      "−10^9 ≤ A, B ≤ 10^9"
+    ],
+    "hints": [
+      "📚 **Topics Needed:** Variables (`int`), Operators (`+`), Input/Output.\n\n💡 **The Logic:** The computer needs two storage containers (variables) to hold the user's numbers. You need to create a third container to hold the result of adding them together, then display that result.\n\n🔢 **Algorithm:**\n1. Read integer `A`\n2. Read integer `B`\n3. Compute `Sum = A + B`\n4. Print `Sum`",
+      "Use the `+` operator to add two integers together.",
+      "Make sure to store the result in a variable before printing."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int a = sc.nextInt();\n        int b = sc.nextInt();\n        \n        // Calculate and print the sum\n        int sum = a + b;\n        System.out.println(sum);\n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "10\n5",
+        "expected_output": "15",
+        "is_hidden": false
+      },
+      {
+        "input": "-2\n8",
+        "expected_output": "6",
+        "is_hidden": false
+      },
+      {
+        "input": "0\n0",
+        "expected_output": "0",
+        "is_hidden": true
+      },
+      {
+        "input": "-100\n-50",
+        "expected_output": "-150",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "basics",
+      "variables",
+      "operators"
+    ]
+  },
+  {
+    "title": "Odd or Even",
+    "description": "Given an integer, determine if it is odd or even.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nGiven an integer `N`, determine if it is odd or even.\n\nPrint \"Even\" if the number is even, otherwise print \"Odd\".\n\n### Example 1:\n```\nInput: N = 4\nOutput: Even\n```\n\n### Example 2:\n```\nInput: N = 7\nOutput: Odd\n```\n\n### Example 3:\n```\nInput: N = 0\nOutput: Even\n```",
+    "constraints": [
+      "−10^9 ≤ N ≤ 10^9"
+    ],
+    "hints": [
+      "📚 **Topics Needed:** Modulo Operator (`%`), If-Else Conditions.\n\n💡 **The Logic:** How do you know if a number is even? It divides by 2 perfectly with **zero remainder**. The modulo operator `%` gives us the remainder.\n\n🔢 **Algorithm:**\n1. Read number `N`\n2. Check logic: `if (N % 2 == 0)`\n3. If true, print \"Even\". Else, print \"Odd\".",
+      "The modulo operator `%` returns the remainder after division.",
+      "A number is even if `N % 2 == 0`."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        \n        // Print \"Even\" if n is even, \"Odd\" otherwise\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "4",
+        "expected_output": "Even",
+        "is_hidden": false
+      },
+      {
+        "input": "7",
+        "expected_output": "Odd",
+        "is_hidden": false
+      },
+      {
+        "input": "0",
+        "expected_output": "Even",
+        "is_hidden": true
+      },
+      {
+        "input": "-3",
+        "expected_output": "Odd",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "basics",
+      "modulo",
+      "conditionals"
+    ]
+  },
+  {
+    "title": "Swap Two Numbers",
+    "description": "Given two variables a and b, swap their values and return them.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nYou are given two variables `a` and `b`. Swap their values and return them as an array `[a, b]`.\n\n### Example 1:\n```\nInput: a = 5, b = 10\nOutput: [10, 5]\n```\n\n### Example 2:\n```\nInput: a = 1, b = 2\nOutput: [2, 1]\n```",
+    "constraints": [
+      "−10^9 ≤ a, b ≤ 10^9"
+    ],
+    "hints": [
+      "📚 **Topics Needed:** Variable Assignment, Temporary Variables.\n\n💡 **The Logic:** Imagine you have a glass of milk (A) and a glass of juice (B). You want to switch them. You can't just pour A into B, or you'll mix them. You need an empty third glass (Temp).\n\n🔢 **Algorithm:**\n1. Pour A into Temp: `temp = A`\n2. Pour B into A: `A = B`\n3. Pour Temp into B: `B = temp`",
+      "You need a temporary variable to hold one value while swapping.",
+      "Without a temp variable, you'll lose one of the original values!"
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int a = sc.nextInt();\n        int b = sc.nextInt();\n        \n        // Swap a and b, then print them\n        // Output format: a b (space separated)\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "5\n10",
+        "expected_output": "10 5",
+        "is_hidden": false
+      },
+      {
+        "input": "1\n2",
+        "expected_output": "2 1",
+        "is_hidden": false
+      },
+      {
+        "input": "-5\n5",
+        "expected_output": "5 -5",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "basics",
+      "variables",
+      "swap"
+    ]
+  },
+  {
+    "title": "Find the Largest of Three",
+    "description": "Given three integers, find and return the largest one.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nGiven three integers `a`, `b`, and `c`, return the largest of the three.\n\n### Example 1:\n```\nInput: a = 1, b = 5, c = 3\nOutput: 5\n```\n\n### Example 2:\n```\nInput: a = 10, b = 10, c = 2\nOutput: 10\n```\n\n### Example 3:\n```\nInput: a = -1, b = -5, c = -3\nOutput: -1\n```",
+    "constraints": [
+      "−10^9 ≤ a, b, c ≤ 10^9"
+    ],
+    "hints": [
+      "📚 **Topics Needed:** Relational Operators (`>`, `<`), Logical Operators (`&&`), Nested If-Else.\n\n💡 **The Logic:** You need to compare `A` vs `B` AND `A` vs `C`.\n\n🔢 **Algorithm:**\n1. If `A >= B` AND `A >= C`, then A is largest.\n2. Else if `B >= A` AND `B >= C`, then B is largest.\n3. Otherwise, C is largest.",
+      "Use the `&&` operator to check multiple conditions.",
+      "Consider edge cases where two or more numbers are equal."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int a = sc.nextInt();\n        int b = sc.nextInt();\n        int c = sc.nextInt();\n        \n        // Print the largest of a, b, c\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "1\n5\n3",
+        "expected_output": "5",
+        "is_hidden": false
+      },
+      {
+        "input": "10\n10\n2",
+        "expected_output": "10",
+        "is_hidden": false
+      },
+      {
+        "input": "-1\n-5\n-3",
+        "expected_output": "-1",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "basics",
+      "conditionals",
+      "comparison"
+    ]
+  },
+  {
+    "title": "Leap Year Calculator",
+    "description": "Check if a given year is a Leap Year.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nGiven a year, determine if it is a leap year.\n\nReturn `true` if it's a leap year, `false` otherwise.\n\n### Leap Year Rules:\n- Divisible by 4 AND\n- NOT divisible by 100, UNLESS\n- Also divisible by 400\n\n### Example 1:\n```\nInput: year = 2020\nOutput: true\n```\n\n### Example 2:\n```\nInput: year = 1900\nOutput: false (Divisible by 100 but not by 400)\n```\n\n### Example 3:\n```\nInput: year = 2000\nOutput: true (Divisible by 400)\n```",
+    "constraints": [
+      "1 ≤ year ≤ 10^6"
+    ],
+    "hints": [
+      "📚 **Topics Needed:** Complex Logic (`&&`, `||`, `!=`).\n\n💡 **The Logic:** A year is a leap year if:\n1. It is divisible by 4, **AND**\n2. It is NOT divisible by 100, **UNLESS**\n3. It is also divisible by 400.\n\n🔢 **Algorithm:**\n1. If `year % 400 == 0` → True\n2. Else if `year % 100 == 0` → False\n3. Else if `year % 4 == 0` → True\n4. Else → False",
+      "Check divisibility by 400 first!",
+      "Years like 1900 are NOT leap years (divisible by 100 but not 400)."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int year = sc.nextInt();\n        \n        // Print \"true\" if leap year, \"false\" otherwise\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "2020",
+        "expected_output": "true",
+        "is_hidden": false
+      },
+      {
+        "input": "1900",
+        "expected_output": "false",
+        "is_hidden": false
+      },
+      {
+        "input": "2000",
+        "expected_output": "true",
+        "is_hidden": false
+      },
+      {
+        "input": "2021",
+        "expected_output": "false",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "basics",
+      "conditionals",
+      "logic"
+    ]
+  },
+  {
+    "title": "Grade Assigner",
+    "description": "Given a score (0-100), return the corresponding letter grade.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nGiven a score from 0 to 100, return the letter grade:\n\n- 90-100: 'A'\n- 80-89: 'B'\n- 70-79: 'C'\n- Below 70: 'F'\n\n### Example 1:\n```\nInput: score = 85\nOutput: 'B'\n```\n\n### Example 2:\n```\nInput: score = 92\nOutput: 'A'\n```\n\n### Example 3:\n```\nInput: score = 65\nOutput: 'F'\n```",
+    "constraints": [
+      "0 ≤ score ≤ 100"
+    ],
+    "hints": [
+      "📚 **Topics Needed:** If-Else Ladder.\n\n💡 **The Logic:** We need to check ranges. We start from the top (A) and work our way down. If we check for 'C' grade first, an 'A' student might get a 'C' by mistake.\n\n🔢 **Algorithm:**\n1. If `score >= 90` print A\n2. Else if `score >= 80` print B\n3. Else if `score >= 70` print C\n4. Else print F",
+      "Start checking from the highest grade first.",
+      "Use else-if to avoid checking unnecessary conditions."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int score = sc.nextInt();\n        \n        // Print grade: A (90+), B (80-89), C (70-79), F (below 70)\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "85",
+        "expected_output": "B",
+        "is_hidden": false
+      },
+      {
+        "input": "92",
+        "expected_output": "A",
+        "is_hidden": false
+      },
+      {
+        "input": "65",
+        "expected_output": "F",
+        "is_hidden": false
+      },
+      {
+        "input": "70",
+        "expected_output": "C",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "basics",
+      "conditionals",
+      "if-else"
+    ]
+  },
+  {
+    "title": "Sum of Natural Numbers",
+    "description": "Calculate the sum of all numbers from 1 to N.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nGiven a positive integer `N`, calculate the sum of all natural numbers from 1 to N.\n\n### Example 1:\n```\nInput: N = 5\nOutput: 15\nExplanation: 1 + 2 + 3 + 4 + 5 = 15\n```\n\n### Example 2:\n```\nInput: N = 10\nOutput: 55\n```",
+    "constraints": [
+      "1 ≤ N ≤ 10^6"
+    ],
+    "hints": [
+      "📚 **Topics Needed:** For Loop, Accumulator Variable.\n\n💡 **The Logic:** You need a \"bucket\" variable starting at 0. You loop from 1 to N, adding the current number to the bucket each time.\n\n🔢 **Algorithm:**\n1. Initialize `sum = 0`\n2. Loop `i` from 1 to `N`\n3. `sum = sum + i`\n4. Print `sum`",
+      "Use a for loop: `for (int i = 1; i <= n; i++)`",
+      "There's also a math formula: `n * (n + 1) / 2`"
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        \n        // Print sum of 1 to n\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "5",
+        "expected_output": "15",
+        "is_hidden": false
+      },
+      {
+        "input": "10",
+        "expected_output": "55",
+        "is_hidden": false
+      },
+      {
+        "input": "1",
+        "expected_output": "1",
+        "is_hidden": true
+      },
+      {
+        "input": "100",
+        "expected_output": "5050",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "loops",
+      "math",
+      "accumulator"
+    ]
+  },
+  {
+    "title": "Factorial Finder",
+    "description": "Calculate N! (N Factorial).",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nGiven a non-negative integer `N`, calculate N! (factorial of N).\n\nFactorial: `N! = N × (N-1) × (N-2) × ... × 1`\n\nNote: `0! = 1`\n\n### Example 1:\n```\nInput: N = 5\nOutput: 120\nExplanation: 5! = 5 × 4 × 3 × 2 × 1 = 120\n```\n\n### Example 2:\n```\nInput: N = 0\nOutput: 1\n```",
+    "constraints": [
+      "0 ≤ N ≤ 12 (to avoid integer overflow)"
+    ],
+    "hints": [
+      "📚 **Topics Needed:** Loops, Multiplication logic.\n\n💡 **The Logic:** Similar to sum, but we multiply. **Crucial Step:** The bucket must start at **1**, not 0 (because anything times 0 is 0).\n\n🔢 **Algorithm:**\n1. Initialize `fact = 1`\n2. Loop `i` from 1 to `N`\n3. `fact = fact * i`\n4. Return `fact`",
+      "Start with `fact = 1`, not 0!",
+      "0! is defined as 1 (base case)."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        \n        // Print n! (factorial)\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "5",
+        "expected_output": "120",
+        "is_hidden": false
+      },
+      {
+        "input": "0",
+        "expected_output": "1",
+        "is_hidden": false
+      },
+      {
+        "input": "3",
+        "expected_output": "6",
+        "is_hidden": true
+      },
+      {
+        "input": "10",
+        "expected_output": "3628800",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "loops",
+      "math",
+      "factorial"
+    ]
+  },
+  {
+    "title": "Count Digits",
+    "description": "Given an integer N, return the number of digits in it.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nGiven an integer `N`, return the count of digits in it.\n\n### Example 1:\n```\nInput: N = 12345\nOutput: 5\n```\n\n### Example 2:\n```\nInput: N = 7\nOutput: 1\n```\n\n### Example 3:\n```\nInput: N = 1000\nOutput: 4\n```",
+    "constraints": [
+      "1 ≤ N ≤ 10^9"
+    ],
+    "hints": [
+      "📚 **Topics Needed:** While Loop, Division (`/`).\n\n💡 **The Logic:** How do we chop off the last digit of a number? Divide by 10. (e.g., `123 / 10 = 12`). Repeat this until the number becomes 0.\n\n🔢 **Algorithm:**\n1. Initialize `count = 0`\n2. While `N > 0`:\n   - `N = N / 10`\n   - `count++`\n3. Return `count`",
+      "Integer division by 10 removes the last digit.",
+      "Keep dividing until the number becomes 0."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        \n        // Print number of digits in n\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "12345",
+        "expected_output": "5",
+        "is_hidden": false
+      },
+      {
+        "input": "7",
+        "expected_output": "1",
+        "is_hidden": false
+      },
+      {
+        "input": "1000",
+        "expected_output": "4",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "loops",
+      "math",
+      "digits"
+    ]
+  },
+  {
+    "title": "Reverse a Number",
+    "description": "Given a number N, return the reverse of it.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nGiven a number `N`, return the reverse of it.\n\n### Example 1:\n```\nInput: N = 123\nOutput: 321\n```\n\n### Example 2:\n```\nInput: N = 500\nOutput: 5\nExplanation: 005 is just 5\n```\n\n### Example 3:\n```\nInput: N = 1200\nOutput: 21\n```",
+    "constraints": [
+      "1 ≤ N ≤ 10^9"
+    ],
+    "hints": [
+      "📚 **Topics Needed:** While Loop, Modulo (`%`), Math Logic.\n\n💡 **The Logic:** To reverse `123`, we need to extract `3`, then `2`, then `1`.\n- Extract last digit: `last = num % 10`\n- Build reverse: `rev = (rev * 10) + last`\n- Shrink number: `num = num / 10`\n\n🔢 **Algorithm:**\n1. Initialize `rev = 0`\n2. Loop while `num > 0`\n3. Apply the formula above\n4. Return `rev`",
+      "Use `% 10` to get the last digit.",
+      "Use `/ 10` to remove the last digit."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        \n        // Print reversed number\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "123",
+        "expected_output": "321",
+        "is_hidden": false
+      },
+      {
+        "input": "500",
+        "expected_output": "5",
+        "is_hidden": false
+      },
+      {
+        "input": "1200",
+        "expected_output": "21",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "loops",
+      "math",
+      "reverse"
+    ]
+  },
+  {
+    "title": "FizzBuzz",
+    "description": "Print numbers 1 to N with Fizz, Buzz, FizzBuzz rules.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nGiven a number `N`, return an array of strings from 1 to N where:\n- For multiples of 3: \"Fizz\"\n- For multiples of 5: \"Buzz\"\n- For multiples of both 3 and 5: \"FizzBuzz\"\n- Otherwise: the number itself as a string\n\n### Example:\n```\nInput: N = 5\nOutput: [\"1\", \"2\", \"Fizz\", \"4\", \"Buzz\"]\n```\n\n### Example 2:\n```\nInput: N = 15\nOutput: [..., \"Fizz\", \"14\", \"FizzBuzz\"]\n```",
+    "constraints": [
+      "1 ≤ N ≤ 10^4"
+    ],
+    "hints": [
+      "📚 **Topics Needed:** Loops, Modulo, Conditional Logic Order.\n\n💡 **The Logic:** You need to check three things: divisible by 3, by 5, or by **both**. The \"Both\" check must happen **first**, or the logic fails.\n\n🔢 **Algorithm:**\n1. Loop `i` from 1 to `N`\n2. If `i % 3 == 0` AND `i % 5 == 0` → Add \"FizzBuzz\"\n3. Else if `i % 3 == 0` → Add \"Fizz\"\n4. Else if `i % 5 == 0` → Add \"Buzz\"\n5. Else → Add `i` as string",
+      "Check for both (FizzBuzz) FIRST!",
+      "Use `i % 15 == 0` as a shortcut for checking both."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        \n        // Print 1 to n: Fizz for %3, Buzz for %5, FizzBuzz for both\n        // Each output on new line\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "5",
+        "expected_output": "1\n2\nFizz\n4\nBuzz",
+        "is_hidden": false
+      },
+      {
+        "input": "3",
+        "expected_output": "1\n2\nFizz",
+        "is_hidden": false
+      },
+      {
+        "input": "15",
+        "expected_output": "1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\n13\n14\nFizzBuzz",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "loops",
+      "conditionals",
+      "classic"
+    ]
+  },
+  {
+    "title": "Fibonacci Sequence",
+    "description": "Print the first N numbers of the Fibonacci series.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nReturn the first `N` numbers of the Fibonacci sequence as an array.\n\nFibonacci: Each number is the sum of the two preceding ones.\n`0, 1, 1, 2, 3, 5, 8, 13, 21, ...`\n\n### Example 1:\n```\nInput: N = 5\nOutput: [0, 1, 1, 2, 3]\n```\n\n### Example 2:\n```\nInput: N = 8\nOutput: [0, 1, 1, 2, 3, 5, 8, 13]\n```",
+    "constraints": [
+      "1 ≤ N ≤ 30"
+    ],
+    "hints": [
+      "📚 **Topics Needed:** Loops, Variable Swapping.\n\n💡 **The Logic:** The next number is the sum of the previous two. `0, 1, 1, 2, 3...`\n- `Next = A + B`\n- Then shift: `A` becomes `B`, `B` becomes `Next`\n\n🔢 **Algorithm:**\n1. Initialize `a = 0`, `b = 1`\n2. Add `a` to result\n3. Loop `N-1` times:\n   - Calculate `c = a + b`\n   - Update `a = b`, `b = c`\n   - Add `b` to result",
+      "Start with 0 and 1.",
+      "Each new number = sum of previous two."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        \n        // Print first n Fibonacci numbers (space separated)\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "5",
+        "expected_output": "0 1 1 2 3",
+        "is_hidden": false
+      },
+      {
+        "input": "8",
+        "expected_output": "0 1 1 2 3 5 8 13",
+        "is_hidden": false
+      },
+      {
+        "input": "1",
+        "expected_output": "0",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "loops",
+      "fibonacci",
+      "sequence"
+    ]
+  },
+  {
+    "title": "Find Maximum in Array",
+    "description": "Given an array of integers, find the largest element.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nGiven an array of integers, find and return the largest element.\n\n### Example 1:\n```\nInput: arr = [1, 5, 3, 9, 2]\nOutput: 9\n```\n\n### Example 2:\n```\nInput: arr = [-5, -2, -10]\nOutput: -2\n```",
+    "constraints": [
+      "1 ≤ arr.length ≤ 10^5",
+      "−10^9 ≤ arr[i] ≤ 10^9"
+    ],
+    "hints": [
+      "📚 **Topics Needed:** Arrays, For Loop, Comparison.\n\n💡 **The Logic:** Assume the first number is the King (Max). Walk down the line of numbers. If you find someone bigger than the King, they become the new King.\n\n🔢 **Algorithm:**\n1. Set `max = arr[0]`\n2. Loop from `i = 1` to end\n3. If `arr[i] > max`, set `max = arr[i]`\n4. Return `max`",
+      "Initialize max with the first element, not 0!",
+      "This handles negative numbers correctly."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        int[] arr = new int[n];\n        for (int i = 0; i < n; i++) {\n            arr[i] = sc.nextInt();\n        }\n        \n        // Print the maximum element\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "5\n1 5 3 9 2",
+        "expected_output": "9",
+        "is_hidden": false
+      },
+      {
+        "input": "3\n-5 -2 -10",
+        "expected_output": "-2",
+        "is_hidden": false
+      },
+      {
+        "input": "1\n42",
+        "expected_output": "42",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "arrays",
+      "loops",
+      "max"
+    ]
+  },
+  {
+    "title": "Sum of Array Elements",
+    "description": "Calculate the sum of all elements in an integer array.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nGiven an array of integers, calculate and return the sum of all elements.\n\n### Example 1:\n```\nInput: arr = [1, 2, 3, 4]\nOutput: 10\n```\n\n### Example 2:\n```\nInput: arr = [10, -5, 3]\nOutput: 8\n```",
+    "constraints": [
+      "0 ≤ arr.length ≤ 10^5",
+      "−10^9 ≤ arr[i] ≤ 10^9"
+    ],
+    "hints": [
+      "📚 **Topics Needed:** Arrays, Accumulator.\n\n💡 **The Logic:** Create a bucket (sum) initialized to 0. Visit every locker (index) in the array and add its contents to your bucket.\n\n🔢 **Algorithm:**\n1. `sum = 0`\n2. For loop through array\n3. `sum = sum + arr[i]`\n4. Return `sum`",
+      "Start with sum = 0.",
+      "Use a for-each loop: `for (int num : arr)`"
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        int[] arr = new int[n];\n        for (int i = 0; i < n; i++) {\n            arr[i] = sc.nextInt();\n        }\n        \n        // Print sum of all elements\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "4\n1 2 3 4",
+        "expected_output": "10",
+        "is_hidden": false
+      },
+      {
+        "input": "3\n10 -5 3",
+        "expected_output": "8",
+        "is_hidden": false
+      },
+      {
+        "input": "0",
+        "expected_output": "0",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "arrays",
+      "loops",
+      "sum"
+    ]
+  },
+  {
+    "title": "Check if Array is Sorted",
+    "description": "Return true if array is sorted in ascending order, else false.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nGiven an array of integers, return `true` if the array is sorted in ascending order, otherwise return `false`.\n\n### Example 1:\n```\nInput: arr = [1, 2, 3]\nOutput: true\n```\n\n### Example 2:\n```\nInput: arr = [1, 3, 2]\nOutput: false\n```",
+    "constraints": [
+      "0 ≤ arr.length ≤ 10^5",
+      "−10^9 ≤ arr[i] ≤ 10^9"
+    ],
+    "hints": [
+      "📚 **Topics Needed:** Arrays, Comparison.\n\n💡 **The Logic:** An array is sorted if every number is smaller than or equal to the *next* number. If we find even ONE pair where `current > next`, the array is NOT sorted.\n\n🔢 **Algorithm:**\n1. Loop from `i = 0` to `length - 2` (Stop before the last one)\n2. If `arr[i] > arr[i+1]`, return `false` immediately\n3. If loop finishes, return `true`",
+      "Compare each element with the next one.",
+      "Stop the loop at `length - 2` to avoid out-of-bounds!"
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        int[] arr = new int[n];\n        for (int i = 0; i < n; i++) {\n            arr[i] = sc.nextInt();\n        }\n        \n        // Print \"true\" if sorted ascending, \"false\" otherwise\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "3\n1 2 3",
+        "expected_output": "true",
+        "is_hidden": false
+      },
+      {
+        "input": "3\n1 3 2",
+        "expected_output": "false",
+        "is_hidden": false
+      },
+      {
+        "input": "1\n5",
+        "expected_output": "true",
+        "is_hidden": true
+      },
+      {
+        "input": "0",
+        "expected_output": "true",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "arrays",
+      "comparison",
+      "sorted"
+    ]
+  },
+  {
+    "title": "Linear Search",
+    "description": "Given an array and a target, return the index of the target. Return -1 if not found.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nGiven an array and a target number, return the index of the target. Return `-1` if not found.\n\n### Example 1:\n```\nInput: arr = [10, 20, 30], target = 20\nOutput: 1\n```\n\n### Example 2:\n```\nInput: arr = [10, 20, 30], target = 5\nOutput: -1\n```",
+    "constraints": [
+      "0 ≤ arr.length ≤ 10^5",
+      "−10^9 ≤ arr[i], target ≤ 10^9"
+    ],
+    "hints": [
+      "📚 **Topics Needed:** Arrays, Loops, Boolean flags.\n\n💡 **The Logic:** You are looking for a specific number `Target`. Check every box one by one. If you find it, return the index (location). If you finish checking all boxes and didn't find it, return -1.\n\n🔢 **Algorithm:**\n1. Loop `i` from 0 to length\n2. If `arr[i] == target`, return `i`\n3. After loop, return `-1`",
+      "Return immediately when you find the target.",
+      "Return -1 only after checking ALL elements."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        int[] arr = new int[n];\n        for (int i = 0; i < n; i++) {\n            arr[i] = sc.nextInt();\n        }\n        int target = sc.nextInt();\n        \n        // Print index of target, or -1 if not found\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "3\n10 20 30\n20",
+        "expected_output": "1",
+        "is_hidden": false
+      },
+      {
+        "input": "3\n10 20 30\n5",
+        "expected_output": "-1",
+        "is_hidden": false
+      },
+      {
+        "input": "1\n5\n5",
+        "expected_output": "0",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "arrays",
+      "search",
+      "linear-search"
+    ]
+  },
+  {
+    "title": "Count Even Numbers in Array",
+    "description": "Return how many even numbers exist in the array.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nGiven an array of integers, return the count of even numbers.\n\n### Example 1:\n```\nInput: arr = [1, 2, 3, 4, 5]\nOutput: 2\nExplanation: 2 and 4 are even\n```\n\n### Example 2:\n```\nInput: arr = [1, 3, 5]\nOutput: 0\n```",
+    "constraints": [
+      "0 ≤ arr.length ≤ 10^5",
+      "−10^9 ≤ arr[i] ≤ 10^9"
+    ],
+    "hints": [
+      "📚 **Topics Needed:** Arrays, Modulo, Counters.\n\n💡 **The Logic:** Combine \"Iteration\" with \"Odd/Even Logic\".\n\n🔢 **Algorithm:**\n1. `count = 0`\n2. Loop through array\n3. If `arr[i] % 2 == 0`, increment count\n4. Return `count`",
+      "Use `% 2 == 0` to check for even numbers.",
+      "Don't forget that 0 is even!"
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        int[] arr = new int[n];\n        for (int i = 0; i < n; i++) {\n            arr[i] = sc.nextInt();\n        }\n        \n        // Print count of even numbers\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "5\n1 2 3 4 5",
+        "expected_output": "2",
+        "is_hidden": false
+      },
+      {
+        "input": "3\n1 3 5",
+        "expected_output": "0",
+        "is_hidden": false
+      },
+      {
+        "input": "3\n0 2 4",
+        "expected_output": "3",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "arrays",
+      "modulo",
+      "counting"
+    ]
+  },
+  {
+    "title": "Move Zeroes to End",
+    "description": "Move all 0s to the end of the array while maintaining the order of non-zero elements.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nMove all 0s to the end of the array while maintaining the relative order of non-zero elements.\n\nDo this **in-place** without making a copy of the array.\n\n### Example 1:\n```\nInput: arr = [0, 1, 0, 3, 12]\nOutput: [1, 3, 12, 0, 0]\n```\n\n### Example 2:\n```\nInput: arr = [0, 0, 1]\nOutput: [1, 0, 0]\n```",
+    "constraints": [
+      "1 ≤ arr.length ≤ 10^4",
+      "−10^9 ≤ arr[i] ≤ 10^9"
+    ],
+    "hints": [
+      "📚 **Topics Needed:** Arrays, Two Pointers concept.\n\n💡 **The Logic:** We don't want to erase data. We want to shift non-zeroes to the front. Keep a pointer `index` that marks \"where the next non-zero should go\".\n\n🔢 **Algorithm:**\n1. `index = 0`\n2. Loop through array\n3. If current number is NOT 0, put it at `arr[index]` and increment `index`\n4. After the loop, fill all positions from `index` to the end with `0`",
+      "Use a pointer to track where to place the next non-zero.",
+      "After moving non-zeros, fill the rest with zeros."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        int[] arr = new int[n];\n        for (int i = 0; i < n; i++) {\n            arr[i] = sc.nextInt();\n        }\n        \n        // Move zeros to end, print result (space separated)\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "5\n0 1 0 3 12",
+        "expected_output": "1 3 12 0 0",
+        "is_hidden": false
+      },
+      {
+        "input": "3\n0 0 1",
+        "expected_output": "1 0 0",
+        "is_hidden": false
+      },
+      {
+        "input": "3\n1 2 3",
+        "expected_output": "1 2 3",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "arrays",
+      "two-pointers",
+      "in-place"
+    ]
+  },
+  {
+    "title": "Count Vowels",
+    "description": "Return the count of vowels in a string.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nGiven a string, return the count of vowels (a, e, i, o, u - case insensitive).\n\n### Example 1:\n```\nInput: s = \"hello\"\nOutput: 2\nExplanation: 'e' and 'o' are vowels\n```\n\n### Example 2:\n```\nInput: s = \"AEIOU\"\nOutput: 5\n```",
+    "constraints": [
+      "0 ≤ s.length ≤ 10^5",
+      "s consists of English letters only"
+    ],
+    "hints": [
+      "📚 **Topics Needed:** Strings, `charAt`, Switch/If.\n\n💡 **The Logic:** Loop through every character. Check if it belongs to the set `{a, e, i, o, u}`.\n\n🔢 **Algorithm:**\n1. Loop `i` from 0 to `str.length()`\n2. `char c = str.charAt(i)`\n3. If `c` is a vowel (check both cases), `count++`\n4. Return `count`",
+      "Convert to lowercase first for easier comparison.",
+      "Vowels: a, e, i, o, u"
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        String s = sc.nextLine();\n        \n        // Print count of vowels (a,e,i,o,u - case insensitive)\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "hello",
+        "expected_output": "2",
+        "is_hidden": false
+      },
+      {
+        "input": "AEIOU",
+        "expected_output": "5",
+        "is_hidden": false
+      },
+      {
+        "input": "xyz",
+        "expected_output": "0",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "strings",
+      "counting",
+      "vowels"
+    ]
+  },
+  {
+    "title": "Reverse a String",
+    "description": "Given a string, return the reversed version.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nGiven a string, return the reversed version.\n\n### Example 1:\n```\nInput: s = \"java\"\nOutput: \"avaj\"\n```\n\n### Example 2:\n```\nInput: s = \"hello\"\nOutput: \"olleh\"\n```",
+    "constraints": [
+      "0 ≤ s.length ≤ 10^5"
+    ],
+    "hints": [
+      "📚 **Topics Needed:** Strings, StringBuilder (for efficiency) or manual string concatenation.\n\n💡 **The Logic:** Strings are immutable. We must build a new one. Start reading the original string from the **last index** down to **0**.\n\n🔢 **Algorithm:**\n1. Create empty String `rev = \"\"`\n2. Loop `i` from `length-1` down to `0`\n3. `rev = rev + str.charAt(i)`\n4. Return `rev`",
+      "Loop from end to beginning.",
+      "Use StringBuilder for better performance."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        String s = sc.nextLine();\n        \n        // Print reversed string\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "java",
+        "expected_output": "avaj",
+        "is_hidden": false
+      },
+      {
+        "input": "hello",
+        "expected_output": "olleh",
+        "is_hidden": false
+      },
+      {
+        "input": "a",
+        "expected_output": "a",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "strings",
+      "reverse"
+    ]
+  },
+  {
+    "title": "Palindrome Check",
+    "description": "Return true if the string is a palindrome.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nA palindrome is a string that reads the same forwards and backwards.\n\nReturn `true` if the string is a palindrome, `false` otherwise.\n\n### Example 1:\n```\nInput: s = \"madam\"\nOutput: true\n```\n\n### Example 2:\n```\nInput: s = \"code\"\nOutput: false\n```\n\n### Example 3:\n```\nInput: s = \"racecar\"\nOutput: true\n```",
+    "constraints": [
+      "1 ≤ s.length ≤ 10^5",
+      "s consists of lowercase English letters"
+    ],
+    "hints": [
+      "📚 **Topics Needed:** Two Pointers.\n\n💡 **The Logic:** A palindrome reads the same forwards and backwards (e.g., \"racecar\"). Compare the first letter with the last. If they match, move inward.\n\n🔢 **Algorithm:**\n1. `start = 0`, `end = length - 1`\n2. While `start < end`:\n3. If `str.charAt(start) != str.charAt(end)`, return `false`\n4. `start++`, `end--`\n5. Return `true`",
+      "Use two pointers: one at start, one at end.",
+      "Move inward comparing characters."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        String s = sc.nextLine();\n        \n        // Print \"true\" if palindrome, \"false\" otherwise\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "madam",
+        "expected_output": "true",
+        "is_hidden": false
+      },
+      {
+        "input": "code",
+        "expected_output": "false",
+        "is_hidden": false
+      },
+      {
+        "input": "racecar",
+        "expected_output": "true",
+        "is_hidden": true
+      },
+      {
+        "input": "a",
+        "expected_output": "true",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "strings",
+      "palindrome",
+      "two-pointers"
+    ]
+  },
+  {
+    "title": "Valid Anagram",
+    "description": "Return true if string B is an anagram of string A.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nTwo strings are anagrams if they contain the same characters with the same frequencies.\n\nReturn `true` if B is an anagram of A.\n\n### Example 1:\n```\nInput: a = \"listen\", b = \"silent\"\nOutput: true\n```\n\n### Example 2:\n```\nInput: a = \"hello\", b = \"world\"\nOutput: false\n```",
+    "constraints": [
+      "1 ≤ a.length, b.length ≤ 10^5",
+      "Strings consist of lowercase letters only"
+    ],
+    "hints": [
+      "📚 **Topics Needed:** Strings, Arrays (Frequency Array).\n\n💡 **The Logic:** Two strings are anagrams if they have the exact same character counts. \"listen\" and \"silent\".\n\n🔢 **Algorithm:**\n1. If lengths differ, return `false`\n2. Create an integer array `count[26]` (for a-z)\n3. For string A, increment counts: `count[char - 'a']++`\n4. For string B, decrement counts: `count[char - 'a']--`\n5. Check if all counts are 0",
+      "Use a frequency array of size 26.",
+      "Increment for first string, decrement for second."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        String a = sc.nextLine();\n        String b = sc.nextLine();\n        \n        // Print \"true\" if b is anagram of a, \"false\" otherwise\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "listen\nsilent",
+        "expected_output": "true",
+        "is_hidden": false
+      },
+      {
+        "input": "hello\nworld",
+        "expected_output": "false",
+        "is_hidden": false
+      },
+      {
+        "input": "anagram\nnagaram",
+        "expected_output": "true",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "strings",
+      "anagram",
+      "frequency"
+    ]
+  },
+  {
+    "title": "Remove Duplicates from Sorted Array",
+    "description": "Remove duplicates in-place from a sorted array and return the new length.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nGiven a sorted array, remove the duplicates **in-place** such that each element appears only once.\n\nReturn the new length of the array.\n\n### Example 1:\n```\nInput: arr = [1, 1, 2]\nOutput: 2\nExplanation: Array becomes [1, 2, _]\n```\n\n### Example 2:\n```\nInput: arr = [0, 0, 1, 1, 1, 2, 2, 3]\nOutput: 4\nExplanation: Array becomes [0, 1, 2, 3, _, _, _, _]\n```",
+    "constraints": [
+      "1 ≤ arr.length ≤ 3 * 10^4",
+      "−100 ≤ arr[i] ≤ 100",
+      "Array is sorted in ascending order"
+    ],
+    "hints": [
+      "📚 **Topics Needed:** Two Pointers.\n\n💡 **The Logic:** Since the array is sorted, duplicates are always next to each other. We use one pointer (`i`) to scan and another pointer (`unique`) to store the position of the last unique number.\n\n🔢 **Algorithm:**\n1. `unique = 0`\n2. Loop `i` from 1 to end\n3. If `arr[i]` is different from `arr[unique]`, increment `unique` and update `arr[unique] = arr[i]`\n4. Return `unique + 1`",
+      "Use two pointers: one slow, one fast.",
+      "The slow pointer marks where to place the next unique element."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        int[] arr = new int[n];\n        for (int i = 0; i < n; i++) {\n            arr[i] = sc.nextInt();\n        }\n        \n        // Print new length after removing duplicates\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "3\n1 1 2",
+        "expected_output": "2",
+        "is_hidden": false
+      },
+      {
+        "input": "8\n0 0 1 1 1 2 2 3",
+        "expected_output": "4",
+        "is_hidden": false
+      },
+      {
+        "input": "1\n1",
+        "expected_output": "1",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "arrays",
+      "two-pointers",
+      "in-place"
+    ]
+  },
+  {
+    "title": "Two Sum (Sorted Array)",
+    "description": "Given a sorted array and a target, return indices of the two numbers that add up to target.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nGiven a **sorted** array of integers and a target sum, return the indices of two numbers that add up to the target.\n\nAssume there is exactly one solution.\n\n### Example 1:\n```\nInput: arr = [2, 7, 11, 15], target = 9\nOutput: [0, 1]\nExplanation: arr[0] + arr[1] = 2 + 7 = 9\n```\n\n### Example 2:\n```\nInput: arr = [1, 3, 4, 5], target = 7\nOutput: [1, 2]\n```",
+    "constraints": [
+      "2 ≤ arr.length ≤ 10^5",
+      "−10^9 ≤ arr[i], target ≤ 10^9",
+      "Array is sorted",
+      "Exactly one solution exists"
+    ],
+    "hints": [
+      "📚 **Topics Needed:** Two Pointers.\n\n💡 **The Logic:** Find two numbers that add up to Target. Since it's sorted, place pointers at Start and End.\n- Sum too small? Move Start pointer right (to get bigger numbers)\n- Sum too big? Move End pointer left (to get smaller numbers)\n\n🔢 **Algorithm:**\n1. `left = 0`, `right = length - 1`\n2. Loop while `left < right`\n3. If `arr[left] + arr[right] == target`, return `[left, right]`\n4. If sum < target, `left++`\n5. If sum > target, `right--`",
+      "Use two pointers: start and end.",
+      "Move pointers based on whether sum is too small or too big."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        int[] arr = new int[n];\n        for (int i = 0; i < n; i++) {\n            arr[i] = sc.nextInt();\n        }\n        int target = sc.nextInt();\n        \n        // Print indices of two numbers that add to target (space separated)\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "4\n2 7 11 15\n9",
+        "expected_output": "0 1",
+        "is_hidden": false
+      },
+      {
+        "input": "4\n1 3 4 5\n7",
+        "expected_output": "1 2",
+        "is_hidden": false
+      },
+      {
+        "input": "2\n-1 0\n-1",
+        "expected_output": "0 1",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "arrays",
+      "two-pointers",
+      "two-sum"
+    ]
+  },
+  {
+    "title": "Best Time to Buy and Sell Stock",
+    "description": "Find the maximum profit from buying and selling a stock once.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nGiven an array `prices` where `prices[i]` is the price of a stock on day `i`, find the maximum profit you can achieve by buying once and selling once.\n\nYou must buy before you sell.\n\nReturn `0` if no profit is possible.\n\n### Example 1:\n```\nInput: prices = [7, 1, 5, 3, 6, 4]\nOutput: 5\nExplanation: Buy at day 2 (price=1), sell at day 5 (price=6). Profit = 6-1 = 5\n```\n\n### Example 2:\n```\nInput: prices = [7, 6, 4, 3, 1]\nOutput: 0\nExplanation: Prices only go down, no profit possible.\n```",
+    "constraints": [
+      "1 ≤ prices.length ≤ 10^5",
+      "0 ≤ prices[i] ≤ 10^4"
+    ],
+    "hints": [
+      "📚 **Topics Needed:** Arrays, Min/Max tracking.\n\n💡 **The Logic:** You want to buy low and sell high. You can only sell *after* you buy.\n- Walk through time (the array)\n- Keep track of the **lowest price seen so far**\n- Calculate profit: `Current Price - Lowest Price`\n- Keep track of the **max profit** seen so far\n\n🔢 **Algorithm:**\n1. `minPrice = MAX_VALUE`, `maxProfit = 0`\n2. Loop through prices\n3. Update `minPrice = min(minPrice, price)`\n4. Update `maxProfit = max(maxProfit, price - minPrice)`\n5. Return `maxProfit`",
+      "Track the minimum price seen so far.",
+      "At each day, calculate potential profit if you sold today."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        int[] prices = new int[n];\n        for (int i = 0; i < n; i++) {\n            prices[i] = sc.nextInt();\n        }\n        \n        // Print maximum profit (or 0 if no profit possible)\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "6\n7 1 5 3 6 4",
+        "expected_output": "5",
+        "is_hidden": false
+      },
+      {
+        "input": "5\n7 6 4 3 1",
+        "expected_output": "0",
+        "is_hidden": false
+      },
+      {
+        "input": "3\n2 4 1",
+        "expected_output": "2",
+        "is_hidden": true
+      },
+      {
+        "input": "1\n1",
+        "expected_output": "0",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "arrays",
+      "dynamic-programming",
+      "stocks"
+    ]
+  },
+  {
+    "title": "Container With Most Water",
+    "description": "Find two lines that together with the x-axis form a container holding the most water.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nGiven an integer array `height` of length `n`, find two lines that together with the x-axis form a container, such that the container contains the most water.\n\nReturn the maximum amount of water a container can store.\n\n### Example 1:\n```\nInput: height = [1,8,6,2,5,4,8,3,7]\nOutput: 49\nExplanation: Lines at index 1 (height 8) and index 8 (height 7). Area = min(8,7) * (8-1) = 49\n```\n\n### Example 2:\n```\nInput: height = [1,1]\nOutput: 1\n```",
+    "constraints": [
+      "2 ≤ n ≤ 10^5",
+      "0 ≤ height[i] ≤ 10^4"
+    ],
+    "hints": [
+      "📚 **Topic:** Two Pointers (Greedy Approach).\n\n💡 **The Logic:** Start with the widest possible container (first and last line). Calculate area. To potentially get a bigger area, you must overcome the width reduction by finding a *taller* line. Always move the pointer of the **shorter** line inward.\n\n🔢 **Algorithm:**\n1. `left = 0`, `right = n-1`\n2. `area = (right - left) * min(height[left], height[right])`\n3. If `height[left] < height[right]`, `left++`. Else `right--`",
+      "The area is limited by the shorter line. Moving the taller line inward can never increase area since width decreases.",
+      "Use `Math.min()` for the height and `Math.max()` to track the maximum area seen so far."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        int[] height = new int[n];\n        for (int i = 0; i < n; i++) {\n            height[i] = sc.nextInt();\n        }\n        \n        // Print the maximum area\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "9\n1 8 6 2 5 4 8 3 7",
+        "expected_output": "49",
+        "is_hidden": false
+      },
+      {
+        "input": "2\n1 1",
+        "expected_output": "1",
+        "is_hidden": false
+      },
+      {
+        "input": "4\n4 3 2 1",
+        "expected_output": "4",
+        "is_hidden": true
+      },
+      {
+        "input": "5\n1 2 4 3 1",
+        "expected_output": "4",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "arrays",
+      "two-pointers",
+      "greedy"
+    ]
+  },
+  {
+    "title": "3Sum",
+    "description": "Find all unique triplets in the array that sum to zero.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nGiven an integer array `nums`, return all the triplets `[nums[i], nums[j], nums[k]]` such that `i != j`, `i != k`, and `j != k`, and `nums[i] + nums[j] + nums[k] == 0`.\n\nThe solution set must not contain duplicate triplets.\n\n### Example 1:\n```\nInput: nums = [-1, 0, 1, 2, -1, -4]\nOutput: [[-1, -1, 2], [-1, 0, 1]]\n```\n\n### Example 2:\n```\nInput: nums = [0, 0, 0]\nOutput: [[0, 0, 0]]\n```",
+    "constraints": [
+      "3 ≤ nums.length ≤ 3000",
+      "-10^5 ≤ nums[i] ≤ 10^5"
+    ],
+    "hints": [
+      "📚 **Topic:** Two Pointers + Sorting.\n\n💡 **The Logic:** Sort the array first. Then loop with index `i` as the fixed number. Use two pointers (`low = i+1`, `high = n-1`) to find pairs that sum to `-nums[i]`.\n\n🔢 **Algorithm:**\n1. Sort array\n2. For `i` from 0 to n-2:\n3. Set `low = i+1`, `high = n-1`\n4. If sum equals 0, save it. Skip duplicates.",
+      "To avoid duplicate triplets, skip `nums[i]` if it equals `nums[i-1]`. Similarly skip duplicate `low` and `high` values after finding a match.",
+      "After finding a triplet, move both `low++` and `high--`, then keep skipping while values are the same as previous."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.*;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        int[] nums = new int[n];\n        for (int i = 0; i < n; i++) {\n            nums[i] = sc.nextInt();\n        }\n        \n        // Find all unique triplets that sum to 0\n        // Print each triplet on a new line, values space-separated\n        // Print triplets in sorted order\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "6\n-1 0 1 2 -1 -4",
+        "expected_output": "-1 -1 2\n-1 0 1",
+        "is_hidden": false
+      },
+      {
+        "input": "3\n0 0 0",
+        "expected_output": "0 0 0",
+        "is_hidden": false
+      },
+      {
+        "input": "3\n1 2 -3",
+        "expected_output": "-3 1 2",
+        "is_hidden": true
+      },
+      {
+        "input": "4\n0 0 0 0",
+        "expected_output": "0 0 0",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "arrays",
+      "two-pointers",
+      "sorting"
+    ]
+  },
+  {
+    "title": "Product of Array Except Self",
+    "description": "Return an array where each element is the product of all other elements.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nReturn an array `answer` such that `answer[i]` is equal to the product of all the elements of `nums` except `nums[i]`.\n\n**Constraint:** O(n) time, **no division operator**.\n\n### Example 1:\n```\nInput: nums = [1, 2, 3, 4]\nOutput: [24, 12, 8, 6]\n```\n\n### Example 2:\n```\nInput: nums = [-1, 1, 0, -3, 3]\nOutput: [0, 0, 9, 0, 0]\n```",
+    "constraints": [
+      "2 ≤ nums.length ≤ 10^5",
+      "-30 ≤ nums[i] ≤ 30",
+      "Product fits in 32-bit integer"
+    ],
+    "hints": [
+      "📚 **Topic:** Prefix/Suffix Arrays.\n\n💡 **The Logic:** `Result[i]` = product of everything *left* of `i` × product of everything *right* of `i`. No division needed!\n\n🔢 **Algorithm:**\n1. `res[0] = 1`. Loop forward: `res[i] = res[i-1] * nums[i-1]` (prefix products)\n2. Loop backward with a `rightProduct` variable, multiply into `res[i]`",
+      "First pass builds prefix products. `res[i]` holds the product of all elements before index `i`.",
+      "Second pass: maintain a running `rightProduct` starting at 1. For each `i` from right to left: `res[i] *= rightProduct`, then `rightProduct *= nums[i]`."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        int[] nums = new int[n];\n        for (int i = 0; i < n; i++) {\n            nums[i] = sc.nextInt();\n        }\n        \n        // Print product of array except self (space separated)\n        // Do NOT use division\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "4\n1 2 3 4",
+        "expected_output": "24 12 8 6",
+        "is_hidden": false
+      },
+      {
+        "input": "5\n-1 1 0 -3 3",
+        "expected_output": "0 0 9 0 0",
+        "is_hidden": false
+      },
+      {
+        "input": "2\n5 3",
+        "expected_output": "3 5",
+        "is_hidden": true
+      },
+      {
+        "input": "3\n2 2 2",
+        "expected_output": "4 4 4",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "arrays",
+      "prefix-sum",
+      "math"
+    ]
+  },
+  {
+    "title": "Sort Colors (Dutch National Flag)",
+    "description": "Sort an array of 0s, 1s, and 2s in-place in a single pass.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nGiven an array with `n` objects colored red (0), white (1), or blue (2), sort them **in-place** so that objects of the same color are adjacent, in the order red, white, blue.\n\n### Example 1:\n```\nInput: nums = [2, 0, 2, 1, 1, 0]\nOutput: [0, 0, 1, 1, 2, 2]\n```\n\n### Example 2:\n```\nInput: nums = [2, 0, 1]\nOutput: [0, 1, 2]\n```",
+    "constraints": [
+      "1 ≤ n ≤ 300",
+      "nums[i] is 0, 1, or 2",
+      "Solve in one pass with O(1) space"
+    ],
+    "hints": [
+      "📚 **Topic:** Three Pointers (Dutch National Flag).\n\n💡 **The Logic:** Three pointers: `low` (for 0s), `mid` (scanner), `high` (for 2s).\n- If `nums[mid] == 0`: swap with `low`, move both forward\n- If `nums[mid] == 1`: just move `mid` forward\n- If `nums[mid] == 2`: swap with `high`, move `high` down (don't move `mid`!)",
+      "When swapping with `high`, don't increment `mid` because the swapped value hasn't been checked yet.",
+      "Loop continues while `mid <= high`. Initialize `low = 0`, `mid = 0`, `high = n - 1`."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        int[] nums = new int[n];\n        for (int i = 0; i < n; i++) {\n            nums[i] = sc.nextInt();\n        }\n        \n        // Sort in-place using Dutch National Flag algorithm\n        // Print sorted array (space separated)\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "6\n2 0 2 1 1 0",
+        "expected_output": "0 0 1 1 2 2",
+        "is_hidden": false
+      },
+      {
+        "input": "3\n2 0 1",
+        "expected_output": "0 1 2",
+        "is_hidden": false
+      },
+      {
+        "input": "1\n0",
+        "expected_output": "0",
+        "is_hidden": true
+      },
+      {
+        "input": "5\n1 1 1 1 1",
+        "expected_output": "1 1 1 1 1",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "arrays",
+      "three-pointers",
+      "sorting",
+      "in-place"
+    ]
+  },
+  {
+    "title": "Rotate Array",
+    "description": "Rotate an array to the right by k steps.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nRotate an array to the right by `k` steps.\n\n### Example 1:\n```\nInput: nums = [1,2,3,4,5,6,7], k = 3\nOutput: [5,6,7,1,2,3,4]\n```\n\n### Example 2:\n```\nInput: nums = [-1,-100,3,99], k = 2\nOutput: [3,99,-1,-100]\n```\n\n### The Trick:\n1. Reverse the **entire** array\n2. Reverse the first `k` elements\n3. Reverse the remaining `n-k` elements",
+    "constraints": [
+      "1 ≤ nums.length ≤ 10^5",
+      "-2^31 ≤ nums[i] ≤ 2^31 - 1",
+      "0 ≤ k ≤ 10^5"
+    ],
+    "hints": [
+      "📚 **Topic:** Array Reversal Trick.\n\n💡 **The Logic:** Rotating k steps element-by-element is O(n*k). The reversal trick does it in O(n):\n1. Reverse entire array\n2. Reverse first k elements\n3. Reverse remaining n-k elements\n\nExample: `[1,2,3,4,5]`, k=2 → Rev All: `[5,4,3,2,1]` → Rev first 2: `[4,5,3,2,1]` → Rev rest: `[4,5,1,2,3]`",
+      "Handle `k > n` by doing `k = k % n` first. If k becomes 0, the array stays the same.",
+      "Write a helper method `reverse(arr, start, end)` that reverses elements between indices `start` and `end`."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        int[] nums = new int[n];\n        for (int i = 0; i < n; i++) {\n            nums[i] = sc.nextInt();\n        }\n        int k = sc.nextInt();\n        \n        // Rotate array right by k steps\n        // Print result (space separated)\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "7\n1 2 3 4 5 6 7\n3",
+        "expected_output": "5 6 7 1 2 3 4",
+        "is_hidden": false
+      },
+      {
+        "input": "4\n-1 -100 3 99\n2",
+        "expected_output": "3 99 -1 -100",
+        "is_hidden": false
+      },
+      {
+        "input": "3\n1 2 3\n4",
+        "expected_output": "3 1 2",
+        "is_hidden": true
+      },
+      {
+        "input": "1\n1\n0",
+        "expected_output": "1",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "arrays",
+      "reversal",
+      "in-place"
+    ]
+  },
+  {
+    "title": "Longest Substring Without Repeating Characters",
+    "description": "Find the length of the longest substring without repeating characters.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nGiven a string `s`, find the length of the longest substring without repeating characters.\n\n### Example 1:\n```\nInput: s = \"abcabcbb\"\nOutput: 3\nExplanation: \"abc\" is the longest substring without repeating characters.\n```\n\n### Example 2:\n```\nInput: s = \"bbbbb\"\nOutput: 1\n```\n\n### Example 3:\n```\nInput: s = \"pwwkew\"\nOutput: 3\nExplanation: \"wke\" is the answer.\n```",
+    "constraints": [
+      "0 ≤ s.length ≤ 5 * 10^4",
+      "s consists of English letters, digits, symbols, and spaces"
+    ],
+    "hints": [
+      "📚 **Topic:** Dynamic Sliding Window + HashSet.\n\n💡 **The Logic:** Expand your window (right pointer) adding characters to a Set. If you find a duplicate, the window is invalid. Shrink from the left (left++) removing characters from the Set until the duplicate is gone. Update maxLength at every step.\n\n🔢 **Algorithm:**\n1. Use a `HashSet` and two pointers `left`, `right`\n2. If `s.charAt(right)` not in set, add it, update max, move right\n3. If duplicate found, remove `s.charAt(left)` from set, move left",
+      "The window `[left, right]` always contains unique characters. When a duplicate is found, keep removing from the left side.",
+      "Use `set.contains()` to check for duplicates and `set.remove()` to shrink the window."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.*;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        String s = sc.nextLine();\n        \n        // Print length of longest substring without repeating characters\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "abcabcbb",
+        "expected_output": "3",
+        "is_hidden": false
+      },
+      {
+        "input": "bbbbb",
+        "expected_output": "1",
+        "is_hidden": false
+      },
+      {
+        "input": "pwwkew",
+        "expected_output": "3",
+        "is_hidden": true
+      },
+      {
+        "input": " ",
+        "expected_output": "1",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "strings",
+      "sliding-window",
+      "hashset"
+    ]
+  },
+  {
+    "title": "Longest Repeating Character Replacement",
+    "description": "Find the longest substring with same letters after at most k replacements.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nReturn the length of the longest substring containing the same letter you can get after performing at most `k` character replacements.\n\n### Example 1:\n```\nInput: s = \"ABAB\", k = 2\nOutput: 4\nExplanation: Replace both 'A's with 'B's (or vice versa).\n```\n\n### Example 2:\n```\nInput: s = \"AABABBA\", k = 1\nOutput: 4\nExplanation: Replace the 'B' at index 3 to get \"AAAAABA\".\n```",
+    "constraints": [
+      "1 ≤ s.length ≤ 10^5",
+      "s consists of uppercase English letters",
+      "0 ≤ k ≤ s.length"
+    ],
+    "hints": [
+      "📚 **Topic:** Sliding Window + Frequency Map.\n\n💡 **The Logic:** A window is valid if: `(Window Length) - (Count of Most Frequent Char in window) <= k`. This means the number of characters we *need* to change is manageable. If the condition fails, shrink the window from the left.\n\n🔢 **Algorithm:**\n1. Use an `int[26]` frequency array\n2. Track `maxFreq` (most frequent char count in current window)\n3. If `windowLen - maxFreq > k`, shrink from left",
+      "You don't need to decrease `maxFreq` when shrinking the window — it only matters when it increases, because that's when new valid windows become possible.",
+      "Window length is `right - left + 1`. Update the answer as `Math.max(ans, right - left + 1)` whenever the window is valid."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.*;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        String s = sc.nextLine();\n        int k = Integer.parseInt(sc.nextLine());\n        \n        // Print length of longest substring after at most k replacements\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "ABAB\n2",
+        "expected_output": "4",
+        "is_hidden": false
+      },
+      {
+        "input": "AABABBA\n1",
+        "expected_output": "4",
+        "is_hidden": false
+      },
+      {
+        "input": "AAAA\n0",
+        "expected_output": "4",
+        "is_hidden": true
+      },
+      {
+        "input": "ABCD\n2",
+        "expected_output": "3",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "strings",
+      "sliding-window",
+      "frequency-map"
+    ]
+  },
+  {
+    "title": "Permutation in String",
+    "description": "Check if one string's permutation is a substring of another.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nGiven two strings `s1` and `s2`, return `true` if `s2` contains a permutation of `s1`, or `false` otherwise.\n\n### Example 1:\n```\nInput: s1 = \"ab\", s2 = \"eidbaooo\"\nOutput: true\nExplanation: s2 contains \"ba\" which is a permutation of \"ab\".\n```\n\n### Example 2:\n```\nInput: s1 = \"ab\", s2 = \"eidboaoo\"\nOutput: false\n```",
+    "constraints": [
+      "1 ≤ s1.length, s2.length ≤ 10^4",
+      "s1 and s2 consist of lowercase English letters"
+    ],
+    "hints": [
+      "📚 **Topic:** Fixed-Size Sliding Window + Frequency Arrays.\n\n💡 **The Logic:** A permutation means same character counts. Use `int[26]` for s1 frequency. Slide a window of size `s1.length()` over s2 maintaining a second frequency array. Compare at each position.\n\n🔢 **Algorithm:**\n1. Build frequency array for s1\n2. Slide window of size s1.length() over s2\n3. If frequency arrays match, return true",
+      "Instead of comparing full arrays each time, maintain a `matches` counter (how many of the 26 characters have equal counts). When matches == 26, return true.",
+      "When sliding: add the new character on the right, remove the character going out on the left, and update the matches counter accordingly."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.*;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        String s1 = sc.nextLine();\n        String s2 = sc.nextLine();\n        \n        // Print \"true\" if s2 contains a permutation of s1\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "ab\neidbaooo",
+        "expected_output": "true",
+        "is_hidden": false
+      },
+      {
+        "input": "ab\neidboaoo",
+        "expected_output": "false",
+        "is_hidden": false
+      },
+      {
+        "input": "a\na",
+        "expected_output": "true",
+        "is_hidden": true
+      },
+      {
+        "input": "abc\nccccbbbbaaaa",
+        "expected_output": "false",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "strings",
+      "sliding-window",
+      "frequency-array"
+    ]
+  },
+  {
+    "title": "Group Anagrams",
+    "description": "Group strings that are anagrams of each other.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nGiven an array of strings, group the anagrams together. You can return the answer in any order.\n\n### Example 1:\n```\nInput: strs = [\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\nOutput: [[\"bat\"],[\"nat\",\"tan\"],[\"ate\",\"eat\",\"tea\"]]\n```\n\n### Example 2:\n```\nInput: strs = [\"\"]\nOutput: [[\"\"]]\n```",
+    "constraints": [
+      "1 ≤ strs.length ≤ 10^4",
+      "0 ≤ strs[i].length ≤ 100",
+      "strs[i] consists of lowercase English letters"
+    ],
+    "hints": [
+      "📚 **Topic:** HashMap with List values.\n\n💡 **The Logic:** If you sort the letters of \"eat\", \"tea\", and \"ate\", they all become \"aet\". Use a `HashMap<String, List<String>>` where the key is the sorted string and the value is the list of original strings.\n\n🔢 **Algorithm:**\n1. For each string, sort its characters to create a key\n2. Add the original string to the map under that key\n3. Return all map values",
+      "Convert string to char array, sort it with `Arrays.sort()`, then convert back to String for the key.",
+      "Use `map.computeIfAbsent(key, k -> new ArrayList<>()).add(str)` for clean insertion."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.*;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        sc.nextLine();\n        String[] strs = new String[n];\n        for (int i = 0; i < n; i++) {\n            strs[i] = sc.nextLine();\n        }\n        \n        // Group anagrams and print each group on a new line\n        // Words in each group space-separated, groups sorted alphabetically\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "6\neat\ntea\ntan\nate\nnat\nbat",
+        "expected_output": "ate eat tea\nbat\nnat tan",
+        "is_hidden": false
+      },
+      {
+        "input": "1\na",
+        "expected_output": "a",
+        "is_hidden": false
+      },
+      {
+        "input": "3\nabc\nbca\ncab",
+        "expected_output": "abc bca cab",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "strings",
+      "hashmap",
+      "sorting",
+      "anagram"
+    ]
+  },
+  {
+    "title": "Search in Rotated Sorted Array",
+    "description": "Search for a target in a rotated sorted array in O(log n).",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nThere is an integer array `nums` sorted in ascending order (with distinct values) that is possibly rotated at an unknown pivot index.\n\nGiven the array `nums` and an integer `target`, return the index of `target`, or `-1` if not found.\n\nYou must write an algorithm with **O(log n)** runtime complexity.\n\n### Example 1:\n```\nInput: nums = [4,5,6,7,0,1,2], target = 0\nOutput: 4\n```\n\n### Example 2:\n```\nInput: nums = [4,5,6,7,0,1,2], target = 3\nOutput: -1\n```",
+    "constraints": [
+      "1 ≤ nums.length ≤ 5000",
+      "-10^4 ≤ nums[i] ≤ 10^4",
+      "All values are distinct",
+      "O(log n) required"
+    ],
+    "hints": [
+      "📚 **Topic:** Modified Binary Search.\n\n💡 **The Logic:** In a rotated sorted array, one half is always sorted. Identify which half is sorted:\n- If `nums[left] <= nums[mid]`, the **left** side is sorted\n- Else, the **right** side is sorted\n\nCheck if target lies in the sorted range. If yes, go there. If no, go to the other side.\n\n🔢 **Algorithm:**\n1. Standard binary search setup\n2. Determine which half is sorted\n3. Check if target is in the sorted half's range",
+      "For the sorted left half: target is there if `nums[left] <= target < nums[mid]`. For sorted right half: `nums[mid] < target <= nums[right]`.",
+      "Be careful with equality: use `<=` when comparing `nums[left]` with `nums[mid]` to handle the case where left == mid."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        int[] nums = new int[n];\n        for (int i = 0; i < n; i++) {\n            nums[i] = sc.nextInt();\n        }\n        int target = sc.nextInt();\n        \n        // Print index of target, or -1 if not found\n        // Must use O(log n) binary search\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "7\n4 5 6 7 0 1 2\n0",
+        "expected_output": "4",
+        "is_hidden": false
+      },
+      {
+        "input": "7\n4 5 6 7 0 1 2\n3",
+        "expected_output": "-1",
+        "is_hidden": false
+      },
+      {
+        "input": "1\n1\n1",
+        "expected_output": "0",
+        "is_hidden": true
+      },
+      {
+        "input": "5\n3 4 5 1 2\n4",
+        "expected_output": "1",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "binary-search",
+      "arrays",
+      "searching"
+    ]
+  },
+  {
+    "title": "Find First and Last Position of Element",
+    "description": "Find the starting and ending position of a given target value in a sorted array.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nFind the starting and ending position of a given `target` value in a sorted array. If `target` is not found, return `[-1, -1]`.\n\n**O(log n)** runtime required.\n\n### Example 1:\n```\nInput: nums = [5,7,7,8,8,10], target = 8\nOutput: [3, 4]\n```\n\n### Example 2:\n```\nInput: nums = [5,7,7,8,8,10], target = 6\nOutput: [-1, -1]\n```",
+    "constraints": [
+      "0 ≤ nums.length ≤ 10^5",
+      "-10^9 ≤ nums[i] ≤ 10^9",
+      "Array is sorted",
+      "O(log n) required"
+    ],
+    "hints": [
+      "📚 **Topic:** Double Binary Search.\n\n💡 **The Logic:** You need two separate binary searches:\n- **Search 1:** Find the *first* occurrence. If `nums[mid] == target`, store `mid` but move `right = mid - 1` to keep looking left.\n- **Search 2:** Find the *last* occurrence. If match, store answer, move `left = mid + 1` to keep looking right.\n\n🔢 **Algorithm:**\n1. Binary search for leftmost target\n2. Binary search for rightmost target",
+      "For leftmost: when you find target, don't return immediately. Save the index and continue searching left (right = mid - 1).",
+      "For rightmost: when you find target, save the index and continue searching right (left = mid + 1). Return both saved indices."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        int[] nums = new int[n];\n        for (int i = 0; i < n; i++) {\n            nums[i] = sc.nextInt();\n        }\n        int target = sc.nextInt();\n        \n        // Print first and last position (space separated)\n        // Print \"-1 -1\" if not found\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "6\n5 7 7 8 8 10\n8",
+        "expected_output": "3 4",
+        "is_hidden": false
+      },
+      {
+        "input": "6\n5 7 7 8 8 10\n6",
+        "expected_output": "-1 -1",
+        "is_hidden": false
+      },
+      {
+        "input": "0\n\n0",
+        "expected_output": "-1 -1",
+        "is_hidden": true
+      },
+      {
+        "input": "3\n1 1 1\n1",
+        "expected_output": "0 2",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "binary-search",
+      "arrays",
+      "searching"
+    ]
+  },
+  {
+    "title": "Find Peak Element",
+    "description": "Find a peak element in an array using binary search.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nFind a peak element and return its index. A peak element is strictly greater than its neighbors.\n\nYou may imagine that `nums[-1] = nums[n] = -∞`.\n\nYou must write an algorithm that runs in **O(log n)** time.\n\n### Example 1:\n```\nInput: nums = [1,2,3,1]\nOutput: 2\nExplanation: 3 is a peak element (index 2).\n```\n\n### Example 2:\n```\nInput: nums = [1,2,1,3,5,6,4]\nOutput: 5\nExplanation: Either index 1 or 5 (both are peaks).\n```",
+    "constraints": [
+      "1 ≤ nums.length ≤ 1000",
+      "-2^31 ≤ nums[i] ≤ 2^31 - 1",
+      "nums[i] != nums[i + 1] for all valid i"
+    ],
+    "hints": [
+      "📚 **Topic:** Binary Search on Unsorted Array.\n\n💡 **The Logic:** You can \"climb the slope\".\n- If `nums[mid] < nums[mid+1]`, you're on an upward slope → peak must be to the **right**\n- If `nums[mid] > nums[mid+1]`, you're on a downward slope → peak is here or to the **left**\n\n🔢 **Algorithm:**\n1. `left = 0`, `right = n - 1`\n2. While `left < right`: check slope direction\n3. When loop ends, `left == right` = peak index",
+      "Always move toward the higher neighbor. A peak is guaranteed to exist on the higher side.",
+      "Use `mid = left + (right - left) / 2` to avoid overflow. Compare `nums[mid]` with `nums[mid + 1]` only."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.Scanner;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        int[] nums = new int[n];\n        for (int i = 0; i < n; i++) {\n            nums[i] = sc.nextInt();\n        }\n        \n        // Print the index of any peak element\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "4\n1 2 3 1",
+        "expected_output": "2",
+        "is_hidden": false
+      },
+      {
+        "input": "1\n1",
+        "expected_output": "0",
+        "is_hidden": false
+      },
+      {
+        "input": "3\n3 2 1",
+        "expected_output": "0",
+        "is_hidden": true
+      },
+      {
+        "input": "2\n1 2",
+        "expected_output": "1",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "binary-search",
+      "arrays",
+      "peak"
+    ]
+  },
+  {
+    "title": "Merge Intervals",
+    "description": "Merge all overlapping intervals.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nGiven an array of intervals where `intervals[i] = [start, end]`, merge all overlapping intervals and return an array of the non-overlapping intervals.\n\n### Example 1:\n```\nInput: intervals = [[1,3],[2,6],[8,10],[15,18]]\nOutput: [[1,6],[8,10],[15,18]]\nExplanation: [1,3] and [2,6] overlap, merged into [1,6].\n```\n\n### Example 2:\n```\nInput: intervals = [[1,4],[4,5]]\nOutput: [[1,5]]\n```",
+    "constraints": [
+      "1 ≤ intervals.length ≤ 10^4",
+      "intervals[i].length == 2",
+      "0 ≤ start ≤ end ≤ 10^4"
+    ],
+    "hints": [
+      "📚 **Topic:** Sorting + Iteration.\n\n💡 **The Logic:**\n1. Sort intervals by start time\n2. Create a `merged` list, add first interval\n3. For each subsequent interval: if it starts before the previous one ends, they overlap → merge by updating end: `max(prevEnd, currEnd)`. Otherwise, add as new.\n\n🔢 **Algorithm:**\n1. Sort by `interval[0]`\n2. Iterate and merge overlapping",
+      "Two intervals overlap when `current.start <= previous.end`. When merging, take the maximum of both end values.",
+      "Use `Arrays.sort(intervals, (a, b) -> a[0] - b[0])` to sort by start time. Use an `ArrayList` for the result."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.*;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        int[][] intervals = new int[n][2];\n        for (int i = 0; i < n; i++) {\n            intervals[i][0] = sc.nextInt();\n            intervals[i][1] = sc.nextInt();\n        }\n        \n        // Merge overlapping intervals\n        // Print each merged interval on a new line: \"start end\"\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "4\n1 3\n2 6\n8 10\n15 18",
+        "expected_output": "1 6\n8 10\n15 18",
+        "is_hidden": false
+      },
+      {
+        "input": "2\n1 4\n4 5",
+        "expected_output": "1 5",
+        "is_hidden": false
+      },
+      {
+        "input": "1\n1 1",
+        "expected_output": "1 1",
+        "is_hidden": true
+      },
+      {
+        "input": "3\n1 10\n2 3\n4 5",
+        "expected_output": "1 10",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "arrays",
+      "sorting",
+      "intervals"
+    ]
+  },
+  {
+    "title": "Remove Nth Node From End of List",
+    "description": "Remove the nth node from the end of a linked list.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nGiven the head of a linked list, remove the `n`th node from the end of the list and return its head.\n\nInput is given as space-separated values representing the linked list nodes, followed by `n`.\n\n### Example 1:\n```\nInput: list = [1,2,3,4,5], n = 2\nOutput: [1,2,3,5]\n```\n\n### Example 2:\n```\nInput: list = [1], n = 1\nOutput: []\n```",
+    "constraints": [
+      "1 ≤ list size ≤ 30",
+      "0 ≤ Node.val ≤ 100",
+      "1 ≤ n ≤ list size"
+    ],
+    "hints": [
+      "📚 **Topic:** Two Pointers (The Gap Method).\n\n💡 **The Logic:** Create a gap of size `n` between `fast` and `slow` pointers.\n1. Move `fast` ahead by `n` steps first\n2. Move both `fast` and `slow` together\n3. When `fast` hits the end, `slow` is right before the node to delete\n\n🔢 **Algorithm:**\n1. Use a dummy node before head\n2. Move fast `n` steps\n3. Move both until fast reaches end\n4. `slow.next = slow.next.next`",
+      "A dummy node before head handles the edge case of removing the first node elegantly.",
+      "If `fast` becomes null after moving `n` steps, the head itself needs to be removed. The dummy node handles this."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.*;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        String[] parts = sc.nextLine().split(\" \");\n        int n = Integer.parseInt(sc.nextLine());\n        \n        int[] list = new int[parts.length];\n        for (int i = 0; i < parts.length; i++) {\n            list[i] = Integer.parseInt(parts[i]);\n        }\n        \n        // Remove nth node from end\n        // Print remaining list (space separated)\n        // Print empty line if list becomes empty\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "1 2 3 4 5\n2",
+        "expected_output": "1 2 3 5",
+        "is_hidden": false
+      },
+      {
+        "input": "1\n1",
+        "expected_output": "",
+        "is_hidden": false
+      },
+      {
+        "input": "1 2\n1",
+        "expected_output": "1",
+        "is_hidden": true
+      },
+      {
+        "input": "1 2\n2",
+        "expected_output": "2",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "linked-list",
+      "two-pointers"
+    ]
+  },
+  {
+    "title": "Add Two Numbers (Linked List)",
+    "description": "Add two numbers represented as reversed linked lists.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nYou are given two non-empty linked lists representing two non-negative integers. The digits are stored in **reverse order**. Add the two numbers and return the sum as a linked list.\n\nInput: two lines of space-separated digits.\n\n### Example 1:\n```\nInput: l1 = [2,4,3], l2 = [5,6,4]\nOutput: [7,0,8]\nExplanation: 342 + 465 = 807\n```\n\n### Example 2:\n```\nInput: l1 = [9,9,9], l2 = [1]\nOutput: [0,0,0,1]\nExplanation: 999 + 1 = 1000\n```",
+    "constraints": [
+      "1 ≤ list length ≤ 100",
+      "0 ≤ Node.val ≤ 9",
+      "Numbers do not contain leading zeros (except 0 itself)"
+    ],
+    "hints": [
+      "📚 **Topic:** Linked List Traversal + Math Carry.\n\n💡 **The Logic:** The lists are reverse integers (2->4->3 is 342). Since digits are reversed, they align with how we do addition (ones place first).\n\n🔢 **Algorithm:**\n1. Create a dummy head node\n2. Loop while either list has nodes OR carry > 0\n3. Sum = l1.val + l2.val + carry\n4. New digit = Sum % 10\n5. New carry = Sum / 10",
+      "Don't forget to handle carry after both lists are exhausted. If carry is 1, add one more node.",
+      "Use `% 10` for the digit and `/ 10` for the carry. Process nodes until both lists AND carry are exhausted."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.*;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        String[] p1 = sc.nextLine().split(\" \");\n        String[] p2 = sc.nextLine().split(\" \");\n        \n        int[] l1 = new int[p1.length];\n        int[] l2 = new int[p2.length];\n        for (int i = 0; i < p1.length; i++) l1[i] = Integer.parseInt(p1[i]);\n        for (int i = 0; i < p2.length; i++) l2[i] = Integer.parseInt(p2[i]);\n        \n        // Add two reversed-digit numbers\n        // Print result digits space-separated (reversed order)\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "2 4 3\n5 6 4",
+        "expected_output": "7 0 8",
+        "is_hidden": false
+      },
+      {
+        "input": "9 9 9\n1",
+        "expected_output": "0 0 0 1",
+        "is_hidden": false
+      },
+      {
+        "input": "0\n0",
+        "expected_output": "0",
+        "is_hidden": true
+      },
+      {
+        "input": "9\n1",
+        "expected_output": "0 1",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "linked-list",
+      "math",
+      "carry"
+    ]
+  },
+  {
+    "title": "Min Stack",
+    "description": "Design a stack that supports push, pop, top, and retrieving the minimum in O(1).",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nDesign a stack that supports `push`, `pop`, `top`, and retrieving the minimum element in **constant time**.\n\nInput: Operations on separate lines. `push X`, `pop`, `top`, `getMin`.\n\n### Example:\n```\nInput:\npush -2\npush 0\npush -3\ngetMin\npop\ntop\ngetMin\n\nOutput:\n-3\n0\n-2\n```",
+    "constraints": [
+      "-2^31 ≤ val ≤ 2^31 - 1",
+      "pop, top, getMin always called on non-empty stack",
+      "At most 3 * 10^4 operations"
+    ],
+    "hints": [
+      "📚 **Topic:** Design / Auxiliary Stack.\n\n💡 **The Logic:** Keep a second stack that records the minimums.\n- When pushing X: if X <= minStack.peek(), push X to minStack too\n- When popping X: if X == minStack.peek(), pop from minStack too\n- getMin just returns minStack.peek()\n\n🔢 **Algorithm:**\n1. Main stack + min stack\n2. Min stack always has current minimum on top",
+      "Push to min stack when the new value is less than or equal to (not just less than) the current minimum.",
+      "Alternative: store pairs `(value, currentMin)` in a single stack. Each entry knows what the min was when it was pushed."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.*;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        // Read operations and execute them\n        // For getMin and top: print the result\n        // Implement using two stacks\n        \n        Stack<Integer> stack = new Stack<>();\n        Stack<Integer> minStack = new Stack<>();\n        \n        while (sc.hasNextLine()) {\n            String line = sc.nextLine().trim();\n            if (line.isEmpty()) break;\n            \n            // Parse and execute operation\n            \n        }\n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "push -2\npush 0\npush -3\ngetMin\npop\ntop\ngetMin",
+        "expected_output": "-3\n0\n-2",
+        "is_hidden": false
+      },
+      {
+        "input": "push 1\npush 2\ntop\ngetMin",
+        "expected_output": "2\n1",
+        "is_hidden": false
+      },
+      {
+        "input": "push 0\npush 1\npush 0\ngetMin\npop\ngetMin",
+        "expected_output": "0\n0",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "stack",
+      "design",
+      "data-structure"
+    ]
+  },
+  {
+    "title": "Daily Temperatures",
+    "description": "Find how many days until a warmer temperature for each day.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nGiven an array of daily temperatures, return an array `answer` such that `answer[i]` is the number of days you have to wait after the `i`th day to get a warmer temperature. If there is no future day with a warmer temperature, `answer[i] = 0`.\n\n### Example 1:\n```\nInput: temperatures = [73,74,75,71,69,72,76,73]\nOutput: [1,1,4,2,1,1,0,0]\n```\n\n### Example 2:\n```\nInput: temperatures = [30,40,50,60]\nOutput: [1,1,1,0]\n```",
+    "constraints": [
+      "1 ≤ temperatures.length ≤ 10^5",
+      "30 ≤ temperatures[i] ≤ 100"
+    ],
+    "hints": [
+      "📚 **Topic:** Monotonic Stack.\n\n💡 **The Logic:** Use a stack of **indices** of days where we haven't found a warmer day yet.\n\nFor each new day `i`:\n- While stack is not empty AND `T[i]` is warmer than `T[stack.peek()]`:\n  - Pop the index, calculate distance `i - poppedIndex`, save it\n- Push `i` onto the stack\n\n🔢 **Algorithm:**\n1. Stack stores indices, not values\n2. Pop when current temp > stack top's temp\n3. Distance = current index - popped index",
+      "The stack maintains a decreasing order of temperatures. When a warmer day comes, it resolves all cooler days on the stack.",
+      "Initialize the answer array with zeros. Only update when you pop from the stack (meaning you found a warmer day)."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.*;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        int[] temps = new int[n];\n        for (int i = 0; i < n; i++) {\n            temps[i] = sc.nextInt();\n        }\n        \n        // Print days until warmer temperature (space separated)\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "8\n73 74 75 71 69 72 76 73",
+        "expected_output": "1 1 4 2 1 1 0 0",
+        "is_hidden": false
+      },
+      {
+        "input": "4\n30 40 50 60",
+        "expected_output": "1 1 1 0",
+        "is_hidden": false
+      },
+      {
+        "input": "4\n60 50 40 30",
+        "expected_output": "0 0 0 0",
+        "is_hidden": true
+      },
+      {
+        "input": "1\n50",
+        "expected_output": "0",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "stack",
+      "monotonic-stack",
+      "arrays"
+    ]
+  },
+  {
+    "title": "Subarray Sum Equals K",
+    "description": "Find the total number of subarrays whose sum equals k.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nGiven an array of integers `nums` and an integer `k`, return the total number of subarrays whose sum equals to `k`.\n\n### Example 1:\n```\nInput: nums = [1,1,1], k = 2\nOutput: 2\nExplanation: [1,1] starting at index 0 and [1,1] starting at index 1.\n```\n\n### Example 2:\n```\nInput: nums = [1,2,3], k = 3\nOutput: 2\nExplanation: [1,2] and [3].\n```",
+    "constraints": [
+      "1 ≤ nums.length ≤ 2 * 10^4",
+      "-1000 ≤ nums[i] ≤ 1000",
+      "-10^7 ≤ k ≤ 10^7"
+    ],
+    "hints": [
+      "📚 **Topic:** Prefix Sum + HashMap.\n\n💡 **The Logic:** `Sum(i,j) = Sum(0,j) - Sum(0,i-1)`. We want `Sum(i,j) == k`, so we need `Sum(0,i-1) = Sum(0,j) - k`.\n\nAs we calculate `currentSum`, ask the HashMap: \"Have I seen a prefix sum of `currentSum - k` before?\" If yes, those are valid subarrays.\n\n🔢 **Algorithm:**\n1. HashMap stores (prefixSum → count)\n2. Initialize map with (0 → 1)\n3. For each element: currentSum += num, count += map.get(currentSum - k)",
+      "Initialize the map with `{0: 1}` to handle subarrays starting from index 0.",
+      "The array can have negative numbers, so you cannot use a sliding window. Prefix sum + HashMap handles negatives correctly."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.*;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        int[] nums = new int[n];\n        for (int i = 0; i < n; i++) {\n            nums[i] = sc.nextInt();\n        }\n        int k = sc.nextInt();\n        \n        // Print the count of subarrays with sum equal to k\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "3\n1 1 1\n2",
+        "expected_output": "2",
+        "is_hidden": false
+      },
+      {
+        "input": "3\n1 2 3\n3",
+        "expected_output": "2",
+        "is_hidden": false
+      },
+      {
+        "input": "4\n1 -1 1 1\n2",
+        "expected_output": "2",
+        "is_hidden": true
+      },
+      {
+        "input": "1\n0\n0",
+        "expected_output": "1",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "arrays",
+      "hashmap",
+      "prefix-sum"
+    ]
+  },
+  {
+    "title": "Longest Consecutive Sequence",
+    "description": "Find the length of the longest consecutive elements sequence.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nGiven an unsorted array of integers `nums`, return the length of the longest consecutive elements sequence.\n\n**Constraint:** O(n) time.\n\n### Example 1:\n```\nInput: nums = [100, 4, 200, 1, 3, 2]\nOutput: 4\nExplanation: The longest consecutive sequence is [1, 2, 3, 4].\n```\n\n### Example 2:\n```\nInput: nums = [0,3,7,2,5,8,4,6,0,1]\nOutput: 9\n```",
+    "constraints": [
+      "0 ≤ nums.length ≤ 10^5",
+      "-10^9 ≤ nums[i] ≤ 10^9"
+    ],
+    "hints": [
+      "📚 **Topic:** HashSet Intelligence.\n\n💡 **The Logic:** Put everything into a HashSet. For each number, only start counting if it's the **start** of a sequence (i.e., `num - 1` is NOT in the set). Then count upward.\n\n🔢 **Algorithm:**\n1. Add all numbers to a HashSet\n2. For each num: if `!set.contains(num - 1)`, it's a sequence start\n3. Count consecutive from there: `num+1`, `num+2`, etc.\n4. Track max length",
+      "The key insight: only start counting from sequence beginnings. This ensures O(n) despite the inner loop.",
+      "Use `set.contains(num + 1)` in a while loop to count the streak length. Update `maxLength` when streak ends."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.*;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        int[] nums = new int[n];\n        for (int i = 0; i < n; i++) {\n            nums[i] = sc.nextInt();\n        }\n        \n        // Print length of longest consecutive sequence\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "6\n100 4 200 1 3 2",
+        "expected_output": "4",
+        "is_hidden": false
+      },
+      {
+        "input": "10\n0 3 7 2 5 8 4 6 0 1",
+        "expected_output": "9",
+        "is_hidden": false
+      },
+      {
+        "input": "0",
+        "expected_output": "0",
+        "is_hidden": true
+      },
+      {
+        "input": "1\n1",
+        "expected_output": "1",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "arrays",
+      "hashset",
+      "sequences"
+    ]
+  },
+  {
+    "title": "Kth Largest Element in an Array",
+    "description": "Find the kth largest element in an unsorted array.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nGiven an integer array `nums` and an integer `k`, return the `k`th largest element in the array.\n\nNote: It is the kth largest element in sorted order, not the kth distinct element.\n\n### Example 1:\n```\nInput: nums = [3,2,1,5,6,4], k = 2\nOutput: 5\n```\n\n### Example 2:\n```\nInput: nums = [3,2,3,1,2,4,5,5,6], k = 4\nOutput: 4\n```",
+    "constraints": [
+      "1 ≤ k ≤ nums.length ≤ 10^5",
+      "-10^4 ≤ nums[i] ≤ 10^4"
+    ],
+    "hints": [
+      "📚 **Topic:** Min-Heap (PriorityQueue).\n\n💡 **The Logic:** Maintain a **Min-Heap** of size `k`.\n- Add numbers to heap\n- If heap size > k, remove the smallest (poll)\n- At the end, the heap top is the kth largest\n\n🔢 **Algorithm:**\n1. `PriorityQueue<Integer> pq = new PriorityQueue<>()`\n2. For each num: `pq.offer(num)`. If `pq.size() > k`, `pq.poll()`\n3. Return `pq.peek()`",
+      "Java's `PriorityQueue` is a min-heap by default. The smallest element is always at the top.",
+      "After processing all elements, the heap contains the k largest elements. The top (minimum of these k) is the kth largest overall."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.*;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        int[] nums = new int[n];\n        for (int i = 0; i < n; i++) {\n            nums[i] = sc.nextInt();\n        }\n        int k = sc.nextInt();\n        \n        // Print the kth largest element\n        \n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "6\n3 2 1 5 6 4\n2",
+        "expected_output": "5",
+        "is_hidden": false
+      },
+      {
+        "input": "9\n3 2 3 1 2 4 5 5 6\n4",
+        "expected_output": "4",
+        "is_hidden": false
+      },
+      {
+        "input": "1\n1\n1",
+        "expected_output": "1",
+        "is_hidden": true
+      },
+      {
+        "input": "3\n7 7 7\n2",
+        "expected_output": "7",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "heap",
+      "priority-queue",
+      "sorting"
+    ]
+  },
+  {
+    "title": "Trapping Rain Water",
+    "description": "Compute how much water can be trapped after raining on an elevation map.",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nGiven `n` non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.\n\n### Example 1:\n```\nInput: n = 12\nheight = [0,1,0,2,1,0,1,3,2,1,2,1]\nOutput: 6\n```",
+    "constraints": [
+      "1 ≤ n ≤ 2 * 10^5",
+      "0 ≤ height[i] ≤ 10^5"
+    ],
+    "hints": [
+      "📚 **Topic:** Two Pointers + Boundary Max.\n\n💡 **The Logic:** Water at index `i` depends on the shorter of tallest walls on left and right. Formula: `water[i] = min(maxLeft, maxRight) - height[i]`.",
+      "If `leftMax < rightMax`, the left side is the bottleneck and water at left can be finalized.",
+      "Track `leftMax` and `rightMax` while shrinking inward and accumulate water where boundary is taller than current bar."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.*;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        int[] height = new int[n];\n        for (int i = 0; i < n; i++) height[i] = sc.nextInt();\n\n        // Print total trapped rain water\n\n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "12\n0 1 0 2 1 0 1 3 2 1 2 1",
+        "expected_output": "6",
+        "is_hidden": false
+      },
+      {
+        "input": "6\n4 2 0 3 2 5",
+        "expected_output": "9",
+        "is_hidden": false
+      },
+      {
+        "input": "3\n3 3 3",
+        "expected_output": "0",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "arrays",
+      "two-pointers",
+      "rain-water"
+    ]
+  },
+  {
+    "title": "Largest Rectangle in Histogram",
+    "description": "Return the area of the largest rectangle in a histogram.",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nGiven an array of integers `heights` representing histogram bar heights where each bar has width 1, return the largest rectangle area.\n\n### Example 1:\n```\nInput: n = 6\nheights = [2,1,5,6,2,3]\nOutput: 10\n```",
+    "constraints": [
+      "1 ≤ n ≤ 2 * 10^5",
+      "0 ≤ heights[i] ≤ 10^4"
+    ],
+    "hints": [
+      "📚 **Topic:** Monotonic Increasing Stack.",
+      "When current height is smaller than stack top height, pop and compute area using popped bar as minimum height.",
+      "Use a final dummy height 0 pass to flush remaining bars and compute pending rectangles."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.*;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        int[] heights = new int[n];\n        for (int i = 0; i < n; i++) heights[i] = sc.nextInt();\n\n        // Print largest rectangle area\n\n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "6\n2 1 5 6 2 3",
+        "expected_output": "10",
+        "is_hidden": false
+      },
+      {
+        "input": "2\n2 4",
+        "expected_output": "4",
+        "is_hidden": false
+      },
+      {
+        "input": "5\n1 1 1 1 1",
+        "expected_output": "5",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "stack",
+      "monotonic-stack",
+      "arrays"
+    ]
+  },
+  {
+    "title": "Sliding Window Maximum",
+    "description": "Return maximum values in each sliding window of size k.",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nGiven array `nums` and integer `k`, return max in each sliding window of size `k`.\n\n### Example 1:\n```\nInput: n = 8\nnums = [1,3,-1,-3,5,3,6,7]\nk = 3\nOutput: 3 3 5 5 6 7\n```",
+    "constraints": [
+      "1 ≤ n ≤ 2 * 10^5",
+      "1 ≤ k ≤ n"
+    ],
+    "hints": [
+      "📚 **Topic:** Deque (Monotonic Queue).",
+      "Keep indices in decreasing value order in deque; front always holds current max index.",
+      "Remove out-of-window indices from front and smaller values from back before pushing current index."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.*;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        int[] nums = new int[n];\n        for (int i = 0; i < n; i++) nums[i] = sc.nextInt();\n        int k = sc.nextInt();\n\n        // Print window maximums space-separated\n\n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "8\n1 3 -1 -3 5 3 6 7\n3",
+        "expected_output": "3 3 5 5 6 7",
+        "is_hidden": false
+      },
+      {
+        "input": "1\n1\n1",
+        "expected_output": "1",
+        "is_hidden": false
+      },
+      {
+        "input": "5\n9 8 7 6 5\n2",
+        "expected_output": "9 8 7 6",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "deque",
+      "sliding-window",
+      "arrays"
+    ]
+  },
+  {
+    "title": "Median of Two Sorted Arrays",
+    "description": "Find median of two sorted arrays in O(log(min(m,n))).",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nGiven sorted arrays `nums1` and `nums2`, return median with overall complexity `O(log(min(m, n)))`.\n\n### Example 1:\n```\nInput:\n2\n1 3\n1\n2\nOutput: 2.0\n```",
+    "constraints": [
+      "0 ≤ m, n ≤ 10^5",
+      "1 ≤ m + n ≤ 2 * 10^5"
+    ],
+    "hints": [
+      "📚 **Topic:** Binary Search on Partition.",
+      "Binary search cut on smaller array and derive cut on larger array so left partition size is half.",
+      "Valid cut when `Aleft <= Bright` and `Bleft <= Aright`; then median is from border values."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.*;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int m = sc.nextInt();\n        int[] nums1 = new int[m];\n        for (int i = 0; i < m; i++) nums1[i] = sc.nextInt();\n        int n = sc.nextInt();\n        int[] nums2 = new int[n];\n        for (int i = 0; i < n; i++) nums2[i] = sc.nextInt();\n\n        // Print median\n\n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "2\n1 3\n1\n2",
+        "expected_output": "2.0",
+        "is_hidden": false
+      },
+      {
+        "input": "2\n1 2\n2\n3 4",
+        "expected_output": "2.5",
+        "is_hidden": false
+      },
+      {
+        "input": "0\n1\n1",
+        "expected_output": "1.0",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "binary-search",
+      "arrays",
+      "divide-and-conquer"
+    ]
+  },
+  {
+    "title": "Merge k Sorted Lists",
+    "description": "Merge k sorted lists into one sorted output.",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nGiven `k` sorted lists, merge them into one sorted sequence and print result.\n\n### Input Format\n- `k`\n- then for each list: `len` followed by `len` values\n\n### Example 1:\n```\nInput:\n3\n3 1 4 5\n3 1 3 4\n2 2 6\nOutput:\n1 1 2 3 4 4 5 6\n```",
+    "constraints": [
+      "0 ≤ k ≤ 10^4",
+      "0 ≤ total nodes ≤ 2 * 10^5"
+    ],
+    "hints": [
+      "📚 **Topic:** Min-Heap (PriorityQueue).",
+      "Push the first element from each non-empty list to heap with list and index metadata.",
+      "Each pop gives next smallest; push next element from same list until heap is empty."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.*;\n\nclass Solution {\n    static class Node {\n        int val, listIdx, elemIdx;\n        Node(int val, int listIdx, int elemIdx) {\n            this.val = val;\n            this.listIdx = listIdx;\n            this.elemIdx = elemIdx;\n        }\n    }\n\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int k = sc.nextInt();\n        List<int[]> lists = new ArrayList<>();\n        for (int i = 0; i < k; i++) {\n            int len = sc.nextInt();\n            int[] arr = new int[len];\n            for (int j = 0; j < len; j++) arr[j] = sc.nextInt();\n            lists.add(arr);\n        }\n\n        // Print merged sorted values\n\n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "3\n3 1 4 5\n3 1 3 4\n2 2 6",
+        "expected_output": "1 1 2 3 4 4 5 6",
+        "is_hidden": false
+      },
+      {
+        "input": "0",
+        "expected_output": "",
+        "is_hidden": false
+      },
+      {
+        "input": "2\n0\n3 2 2 2",
+        "expected_output": "2 2 2",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "heap",
+      "priority-queue",
+      "linked-list"
+    ]
+  },
+  {
+    "title": "Edit Distance",
+    "description": "Find minimum number of insert/delete/replace operations.",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nGiven `word1` and `word2`, return minimum operations required to convert `word1` to `word2` using insert, delete, replace.\n\n### Example 1:\n```\nInput:\nhorse\nros\nOutput: 3\n```",
+    "constraints": [
+      "0 ≤ word1.length, word2.length ≤ 500"
+    ],
+    "hints": [
+      "📚 **Topic:** 2D Dynamic Programming.",
+      "Let `dp[i][j]` be cost to convert first `i` chars of word1 to first `j` chars of word2.",
+      "If chars differ, use `1 + min(delete, insert, replace)` transitions."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.*;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        String word1 = sc.nextLine();\n        String word2 = sc.nextLine();\n\n        // Print minimum edit distance\n\n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "horse\nros",
+        "expected_output": "3",
+        "is_hidden": false
+      },
+      {
+        "input": "intention\nexecution",
+        "expected_output": "5",
+        "is_hidden": false
+      },
+      {
+        "input": "\nabc",
+        "expected_output": "3",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "dynamic-programming",
+      "strings",
+      "edit-distance"
+    ]
+  },
+  {
+    "title": "Longest Valid Parentheses",
+    "description": "Find length of longest valid parentheses substring.",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nGiven a string containing only '(' and ')', return length of longest valid parentheses substring.\n\n### Example 1:\n```\nInput: )()())\nOutput: 4\n```",
+    "constraints": [
+      "0 ≤ s.length ≤ 3 * 10^4"
+    ],
+    "hints": [
+      "📚 **Topic:** Stack with index marker.",
+      "Push `-1` initially; for '(' push index; for ')' pop once.",
+      "If stack becomes empty push current index; else valid length is `i - stack.peek()`."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.*;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        String s = sc.nextLine();\n\n        // Print longest valid parentheses length\n\n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": ")()())",
+        "expected_output": "4",
+        "is_hidden": false
+      },
+      {
+        "input": "(()",
+        "expected_output": "2",
+        "is_hidden": false
+      },
+      {
+        "input": "",
+        "expected_output": "0",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "stack",
+      "strings",
+      "parentheses"
+    ]
+  },
+  {
+    "title": "Word Ladder",
+    "description": "Return shortest transformation sequence length.",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nGiven `beginWord`, `endWord`, and dictionary `wordList`, return number of words in shortest transformation sequence where adjacent words differ by one character. Return `0` if impossible.\n\n### Example 1:\n```\nInput:\nhit\ncog\n6\nhot dot dog lot log cog\nOutput: 5\n```",
+    "constraints": [
+      "1 ≤ word length ≤ 10",
+      "1 ≤ n ≤ 5000"
+    ],
+    "hints": [
+      "📚 **Topic:** BFS on implicit graph.",
+      "Use queue for level-order traversal and set for dictionary/visited checks.",
+      "Generate neighbors by changing each character position to 'a'..'z'."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.*;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        String beginWord = sc.nextLine().trim();\n        String endWord = sc.nextLine().trim();\n        int n = Integer.parseInt(sc.nextLine().trim());\n        String[] words = n == 0 ? new String[0] : sc.nextLine().trim().split(\"\\s+\");\n\n        // Print shortest transformation length\n\n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "hit\ncog\n6\nhot dot dog lot log cog",
+        "expected_output": "5",
+        "is_hidden": false
+      },
+      {
+        "input": "hit\ncog\n5\nhot dot dog lot log",
+        "expected_output": "0",
+        "is_hidden": false
+      },
+      {
+        "input": "a\nc\n3\na b c",
+        "expected_output": "2",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "graphs",
+      "bfs",
+      "shortest-path"
+    ]
+  },
+  {
+    "title": "Course Schedule II",
+    "description": "Return valid topological ordering of courses.",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nGiven `numCourses` and prerequisite pairs `[a, b]` (take `b` before `a`), return any valid order to finish all courses. Return empty line if impossible.\n\n### Example 1:\n```\nInput:\n4\n4\n1 0\n2 0\n3 1\n3 2\nOutput: 0 1 2 3\n```",
+    "constraints": [
+      "1 ≤ numCourses ≤ 2 * 10^5",
+      "0 ≤ m ≤ 2 * 10^5"
+    ],
+    "hints": [
+      "📚 **Topic:** Topological Sort (Kahn's Algorithm).",
+      "Build adjacency list and indegree; start queue with all indegree-0 nodes.",
+      "Process queue, decrement neighbors indegree; if processed count < numCourses, a cycle exists."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.*;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int numCourses = sc.nextInt();\n        int m = sc.nextInt();\n        int[][] prerequisites = new int[m][2];\n        for (int i = 0; i < m; i++) {\n            prerequisites[i][0] = sc.nextInt();\n            prerequisites[i][1] = sc.nextInt();\n        }\n\n        // Print valid order space-separated, or empty line if impossible\n\n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "4\n4\n1 0\n2 0\n3 1\n3 2",
+        "expected_output": "0 1 2 3",
+        "is_hidden": false
+      },
+      {
+        "input": "2\n2\n1 0\n0 1",
+        "expected_output": "",
+        "is_hidden": false
+      },
+      {
+        "input": "1\n0",
+        "expected_output": "0",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "graphs",
+      "topological-sort",
+      "bfs"
+    ]
+  },
+  {
+    "title": "Find Median from Data Stream",
+    "description": "Design data structure to add numbers and return running median.",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nImplement MedianFinder-like behavior:\n- `add x` adds number `x`\n- `find` prints current median\n\n### Input Format\n- First line: integer `q`\n- Next `q` lines: either `add x` or `find`\n\n### Example 1:\n```\nInput:\n5\nadd 1\nadd 2\nfind\nadd 3\nfind\nOutput:\n1.5\n2.0\n```",
+    "constraints": [
+      "1 ≤ q ≤ 2 * 10^5",
+      "-10^5 ≤ x ≤ 10^5"
+    ],
+    "hints": [
+      "📚 **Topic:** Two Heaps (max-heap + min-heap).",
+      "Keep lower half in max-heap and upper half in min-heap, then rebalance sizes.",
+      "Median is top of larger heap or average of both tops when equal sizes."
+    ],
+    "starter_code": [
+      {
+        "language": "java",
+        "code": "import java.util.*;\n\nclass Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int q = Integer.parseInt(sc.nextLine().trim());\n\n        // Process queries and print result for each 'find'\n\n    }\n}"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "5\nadd 1\nadd 2\nfind\nadd 3\nfind",
+        "expected_output": "1.5\n2.0",
+        "is_hidden": false
+      },
+      {
+        "input": "4\nadd 5\nfind\nadd 7\nfind",
+        "expected_output": "5.0\n6.0",
+        "is_hidden": false
+      },
+      {
+        "input": "3\nadd -1\nadd -2\nfind",
+        "expected_output": "-1.5",
+        "is_hidden": true
+      }
+    ],
+    "tags": [
+      "java",
+      "heap",
+      "design",
+      "data-stream"
+    ]
+  },
+  {
+    "title": "The Spreadsheet Builder",
+    "description": "Convert a dictionary into a Pandas DataFrame. Use Pandas/NumPy-style operations.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nConvert the given dictionary into a Pandas DataFrame and print it.\n\n### Input\nNo stdin. Use the provided dictionary in code.\n\n### Expected\nA DataFrame with columns `Student` and `Score`.",
+    "constraints": [
+      "Use Python",
+      "Prefer vectorized Pandas/NumPy operations"
+    ],
+    "hints": [
+      "Use `pd.DataFrame(data)` directly",
+      "Keys become columns",
+      "Values lists become rows"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import pandas as pd\n\n# Build and print DataFrame from the given dictionary\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "Student,Score\nAlice,85\nBob,90\nCharlie,78",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "pandas",
+      "easy",
+      "dataframe"
+    ]
+  },
+  {
+    "title": "The Column Grabber",
+    "description": "Select and return one column from a DataFrame. Use Pandas/NumPy-style operations.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nGiven a DataFrame with columns `Name`, `Age`, and `City`, return only the `City` column.\n\n### Input\nNo stdin. Build sample DataFrame in code.\n\n### Output\nPrint the city values line by line.",
+    "constraints": [
+      "Use Python",
+      "Prefer vectorized Pandas/NumPy operations"
+    ],
+    "hints": [
+      "Single column returns Series",
+      "Use `df['City']`",
+      "Do not use double brackets for Series output"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import pandas as pd\n\n# Return only City column\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "New York\nParis",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "pandas",
+      "easy",
+      "selection"
+    ]
+  },
+  {
+    "title": "The Multi-Select",
+    "description": "Select multiple columns from a DataFrame. Use Pandas/NumPy-style operations.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nReturn a DataFrame with only `Name` and `Score` columns.\n\n### Input\nNo stdin. Build sample DataFrame in code.\n\n### Output\nPrint selected table as CSV without index.",
+    "constraints": [
+      "Use Python",
+      "Prefer vectorized Pandas/NumPy operations"
+    ],
+    "hints": [
+      "Use double brackets",
+      "Pass a list of column names",
+      "`df[['Name','Score']]` is the pattern"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import pandas as pd\n\n# Select Name and Score\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "Name,Score\nAlice,85\nBob,90",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "pandas",
+      "easy",
+      "selection"
+    ]
+  },
+  {
+    "title": "The Bouncer (Simple Filter)",
+    "description": "Filter rows using a simple numeric condition. Use Pandas/NumPy-style operations.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nReturn all rows where `Age > 30`.\n\n### Output\nPrint matching rows as CSV without index.",
+    "constraints": [
+      "Use Python",
+      "Prefer vectorized Pandas/NumPy operations"
+    ],
+    "hints": [
+      "Create boolean mask first",
+      "Mask shape equals row count",
+      "Apply as `df[mask]`"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import pandas as pd\n\n# Filter Age > 30\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "Name,Age\nB,35\nC,40",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "pandas",
+      "easy",
+      "filtering"
+    ]
+  },
+  {
+    "title": "The Specific Search (Exact Match)",
+    "description": "Filter rows by exact string match. Use Pandas/NumPy-style operations.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nShow only rows where `Name == 'Alice'`.\n\n### Output\nPrint matching rows as CSV without index.",
+    "constraints": [
+      "Use Python",
+      "Prefer vectorized Pandas/NumPy operations"
+    ],
+    "hints": [
+      "Use `==` not `=`",
+      "Case must match exactly",
+      "Then filter with mask"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import pandas as pd\n\n# Filter Name == 'Alice'\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "Name,Score\nAlice,80\nAlice,95",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "pandas",
+      "easy",
+      "filtering"
+    ]
+  },
+  {
+    "title": "The Complex Filter (AND Condition)",
+    "description": "Apply two conditions with AND. Use Pandas/NumPy-style operations.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nFind rows where `Score > 80` and `Attendance > 90`.\n\n### Output\nPrint rows as CSV without index.",
+    "constraints": [
+      "Use Python",
+      "Prefer vectorized Pandas/NumPy operations"
+    ],
+    "hints": [
+      "Use `&` in Pandas",
+      "Wrap each condition in parentheses",
+      "Both conditions must be true"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import pandas as pd\n\n# Filter Score > 80 and Attendance > 90\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "Name,Score,Attendance\nA,85,95",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "pandas",
+      "easy",
+      "boolean-logic"
+    ]
+  },
+  {
+    "title": "The Optional Filter (OR Condition)",
+    "description": "Apply two conditions with OR. Use Pandas/NumPy-style operations.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nFind rows where `City` is `New York` OR `Score > 90`.\n\n### Output\nPrint rows as CSV without index.",
+    "constraints": [
+      "Use Python",
+      "Prefer vectorized Pandas/NumPy operations"
+    ],
+    "hints": [
+      "Use `|` for OR",
+      "Keep parentheses around both conditions",
+      "At least one condition true"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import pandas as pd\n\n# Filter City == 'New York' OR Score > 90\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "City,Score\nNew York,50\nLondon,95",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "pandas",
+      "easy",
+      "boolean-logic"
+    ]
+  },
+  {
+    "title": "The Detective (Finding Nulls)",
+    "description": "Count missing values per column. Use Pandas/NumPy-style operations.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nReturn missing value counts for each column using Pandas.\n\n### Output\nPrint as `A:1` style lines sorted by column name.",
+    "constraints": [
+      "Use Python",
+      "Prefer vectorized Pandas/NumPy operations"
+    ],
+    "hints": [
+      "Use `isnull()` or `isna()`",
+      "Chain with `.sum()`",
+      "This gives column-wise counts"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import pandas as pd\nimport numpy as np\n\n# Count nulls per column\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "A:1\nB:2",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "pandas",
+      "easy",
+      "cleaning"
+    ]
+  },
+  {
+    "title": "The Trash Collector (Dropping Nulls)",
+    "description": "Drop rows containing any null value. Use Pandas/NumPy-style operations.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nRemove all rows with at least one NaN.\n\n### Output\nPrint cleaned table as CSV without index.",
+    "constraints": [
+      "Use Python",
+      "Prefer vectorized Pandas/NumPy operations"
+    ],
+    "hints": [
+      "Use `dropna()`",
+      "Default drops rows",
+      "Result should only include complete rows"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import pandas as pd\nimport numpy as np\n\n# Drop rows with any NaN\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "ID,Name\n1,Alice\n3,Bob",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "pandas",
+      "easy",
+      "cleaning"
+    ]
+  },
+  {
+    "title": "The Fixer (Filling Nulls)",
+    "description": "Fill missing values in one column. Use Pandas/NumPy-style operations.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nReplace NaN in the `Score` column with `0`.\n\n### Output\nPrint table as CSV without index.",
+    "constraints": [
+      "Use Python",
+      "Prefer vectorized Pandas/NumPy operations"
+    ],
+    "hints": [
+      "Use `fillna(0)` on one column",
+      "Assign back to column",
+      "Keep other columns unchanged"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import pandas as pd\nimport numpy as np\n\n# Fill Score NaN with 0\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "Name,Score\nA,0.0\nB,90.0",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "pandas",
+      "easy",
+      "imputation"
+    ]
+  },
+  {
+    "title": "The Calculator (New Column)",
+    "description": "Create a computed column with vectorized math. Use Pandas/NumPy-style operations.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nCreate `Total = Quantity * Price`.\n\n### Output\nPrint resulting table as CSV without index.",
+    "constraints": [
+      "Use Python",
+      "Prefer vectorized Pandas/NumPy operations"
+    ],
+    "hints": [
+      "Vectorized operations are row-wise by alignment",
+      "No loop needed",
+      "Assign to new column `Total`"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import pandas as pd\n\n# Create Total column\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "Item,Price,Quantity,Total\nApple,2,5,10\nBanana,1,10,10",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "pandas",
+      "easy",
+      "feature-engineering"
+    ]
+  },
+  {
+    "title": "The Statistician (Mean)",
+    "description": "Compute average of a numeric column. Use Pandas/NumPy-style operations.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nCalculate mean of `Salary` column and print it.\n\n### Output\nSingle float value.",
+    "constraints": [
+      "Use Python",
+      "Prefer vectorized Pandas/NumPy operations"
+    ],
+    "hints": [
+      "Select one column",
+      "Call `.mean()`",
+      "Print numeric result"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import pandas as pd\n\n# Compute average Salary\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "60000.0",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "pandas",
+      "easy",
+      "aggregation"
+    ]
+  },
+  {
+    "title": "The Ranker (Sorting)",
+    "description": "Sort rows by one column descending. Use Pandas/NumPy-style operations.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nSort by `Score` descending and print as CSV without index.",
+    "constraints": [
+      "Use Python",
+      "Prefer vectorized Pandas/NumPy operations"
+    ],
+    "hints": [
+      "Use `sort_values`",
+      "Set `ascending=False`",
+      "Sort by Score column"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import pandas as pd\n\n# Sort by Score descending\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "Name,Score\nB,90\nC,70\nA,50",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "pandas",
+      "easy",
+      "sorting"
+    ]
+  },
+  {
+    "title": "The Categorizer (GroupBy)",
+    "description": "Aggregate values by category with groupby. Use Pandas/NumPy-style operations.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nGroup by `Team` and sum `Points`. Print as `Team:Points` sorted by team name.",
+    "constraints": [
+      "Use Python",
+      "Prefer vectorized Pandas/NumPy operations"
+    ],
+    "hints": [
+      "Use `groupby('Team')['Points'].sum()`",
+      "Group splits into buckets",
+      "Then aggregate each bucket"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import pandas as pd\n\n# Group Team and sum Points\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "Blue:20\nRed:40",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "pandas",
+      "easy",
+      "groupby"
+    ]
+  },
+  {
+    "title": "The String Cleaner",
+    "description": "Normalize text values to lowercase. Use Pandas/NumPy-style operations.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nConvert `City` column to lowercase and print as CSV without index.",
+    "constraints": [
+      "Use Python",
+      "Prefer vectorized Pandas/NumPy operations"
+    ],
+    "hints": [
+      "Use `.str.lower()`",
+      "Apply on entire Series",
+      "Do not loop row-by-row"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import pandas as pd\n\n# Convert City to lowercase\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "City\nnew york\nparis",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "pandas",
+      "easy",
+      "strings"
+    ]
+  },
+  {
+    "title": "The Correlation Hunter",
+    "description": "Find strongest positive correlation with a target column. This problem focuses on practical EDA/preprocessing workflows.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nFind the column most positively correlated with `Price` (excluding Price itself). Print `ColumnName:correlation`.",
+    "constraints": [
+      "Use Python Pandas/NumPy",
+      "Return/print requested transformed output"
+    ],
+    "hints": [
+      "Understand the transformation first, then apply vectorized operations.",
+      "Use built-in Pandas operations instead of manual loops whenever possible.",
+      "Verify output shape/format exactly before printing."
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import pandas as pd\nimport numpy as np\n\n# Implement the required transformation and print output\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "Size:1.0",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "pandas",
+      "medium",
+      "preprocessing"
+    ]
+  },
+  {
+    "title": "The Outlier Detector (IQR Method)",
+    "description": "Compute IQR for Salary values. This problem focuses on practical EDA/preprocessing workflows.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nGiven a Salary list in code, compute IQR = Q3 - Q1 and print the numeric value.",
+    "constraints": [
+      "Use Python Pandas/NumPy",
+      "Return/print requested transformed output"
+    ],
+    "hints": [
+      "Understand the transformation first, then apply vectorized operations.",
+      "Use built-in Pandas operations instead of manual loops whenever possible.",
+      "Verify output shape/format exactly before printing."
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import pandas as pd\nimport numpy as np\n\n# Implement the required transformation and print output\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "30",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "pandas",
+      "medium",
+      "preprocessing"
+    ]
+  },
+  {
+    "title": "The Value Counter",
+    "description": "Count unique categories and frequencies. This problem focuses on practical EDA/preprocessing workflows.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nCount each unique value in `Dept` column and print as `value:count` sorted by count descending.",
+    "constraints": [
+      "Use Python Pandas/NumPy",
+      "Return/print requested transformed output"
+    ],
+    "hints": [
+      "Understand the transformation first, then apply vectorized operations.",
+      "Use built-in Pandas operations instead of manual loops whenever possible.",
+      "Verify output shape/format exactly before printing."
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import pandas as pd\nimport numpy as np\n\n# Implement the required transformation and print output\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "HR:2\nIT:1\nFinance:1",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "pandas",
+      "medium",
+      "preprocessing"
+    ]
+  },
+  {
+    "title": "The Translator (Label Encoding)",
+    "description": "Map ordinal category values to ordered numbers. This problem focuses on practical EDA/preprocessing workflows.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nMap `Low->1`, `Medium->2`, `High->3` in `Satisfaction` column and print resulting values line by line.",
+    "constraints": [
+      "Use Python Pandas/NumPy",
+      "Return/print requested transformed output"
+    ],
+    "hints": [
+      "Understand the transformation first, then apply vectorized operations.",
+      "Use built-in Pandas operations instead of manual loops whenever possible.",
+      "Verify output shape/format exactly before printing."
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import pandas as pd\nimport numpy as np\n\n# Implement the required transformation and print output\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "1\n3",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "pandas",
+      "medium",
+      "preprocessing"
+    ]
+  },
+  {
+    "title": "The Expander (One-Hot Encoding)",
+    "description": "Create one-hot encoded columns for a nominal category. This problem focuses on practical EDA/preprocessing workflows.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nPerform one-hot encoding on `Color` and print encoded matrix as CSV without index.",
+    "constraints": [
+      "Use Python Pandas/NumPy",
+      "Return/print requested transformed output"
+    ],
+    "hints": [
+      "Understand the transformation first, then apply vectorized operations.",
+      "Use built-in Pandas operations instead of manual loops whenever possible.",
+      "Verify output shape/format exactly before printing."
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import pandas as pd\nimport numpy as np\n\n# Implement the required transformation and print output\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "Color_Blue,Color_Red\n0,1\n1,0",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "pandas",
+      "medium",
+      "preprocessing"
+    ]
+  },
+  {
+    "title": "The Equalizer (Min-Max Scaling)",
+    "description": "Scale numeric values to [0,1] range. This problem focuses on practical EDA/preprocessing workflows.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nScale `Score` column using Min-Max formula and print resulting values line by line.",
+    "constraints": [
+      "Use Python Pandas/NumPy",
+      "Return/print requested transformed output"
+    ],
+    "hints": [
+      "Understand the transformation first, then apply vectorized operations.",
+      "Use built-in Pandas operations instead of manual loops whenever possible.",
+      "Verify output shape/format exactly before printing."
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import pandas as pd\nimport numpy as np\n\n# Implement the required transformation and print output\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "0.0\n0.5\n1.0",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "pandas",
+      "medium",
+      "preprocessing"
+    ]
+  },
+  {
+    "title": "The Binner (Discretization)",
+    "description": "Convert continuous scores into categorical pass/fail bins. This problem focuses on practical EDA/preprocessing workflows.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nCreate `Grade` from Score using bins: 0-50 Fail, 50-100 Pass. Print `Score,Grade` as CSV without index.",
+    "constraints": [
+      "Use Python Pandas/NumPy",
+      "Return/print requested transformed output"
+    ],
+    "hints": [
+      "Understand the transformation first, then apply vectorized operations.",
+      "Use built-in Pandas operations instead of manual loops whenever possible.",
+      "Verify output shape/format exactly before printing."
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import pandas as pd\nimport numpy as np\n\n# Implement the required transformation and print output\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "Score,Grade\n40,Fail\n80,Pass",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "pandas",
+      "medium",
+      "preprocessing"
+    ]
+  },
+  {
+    "title": "The Time Traveler (Date Extraction)",
+    "description": "Extract month from datetime column. This problem focuses on practical EDA/preprocessing workflows.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nConvert Date strings to datetime and print extracted month values line by line.",
+    "constraints": [
+      "Use Python Pandas/NumPy",
+      "Return/print requested transformed output"
+    ],
+    "hints": [
+      "Understand the transformation first, then apply vectorized operations.",
+      "Use built-in Pandas operations instead of manual loops whenever possible.",
+      "Verify output shape/format exactly before printing."
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import pandas as pd\nimport numpy as np\n\n# Implement the required transformation and print output\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "1\n5",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "pandas",
+      "medium",
+      "preprocessing"
+    ]
+  },
+  {
+    "title": "The Pivot Table",
+    "description": "Create pivot summary with multi-dimensional aggregation. This problem focuses on practical EDA/preprocessing workflows.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nBuild pivot table of mean `Score` by `Class` (index) and `Gender` (columns). Print as CSV.",
+    "constraints": [
+      "Use Python Pandas/NumPy",
+      "Return/print requested transformed output"
+    ],
+    "hints": [
+      "Understand the transformation first, then apply vectorized operations.",
+      "Use built-in Pandas operations instead of manual loops whenever possible.",
+      "Verify output shape/format exactly before printing."
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import pandas as pd\nimport numpy as np\n\n# Implement the required transformation and print output\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "Class,F,M\nA,90.0,80.0\nB,,70.0",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "pandas",
+      "medium",
+      "preprocessing"
+    ]
+  },
+  {
+    "title": "The Apply Function (Custom Logic)",
+    "description": "Use apply with custom function for derived labels. This problem focuses on practical EDA/preprocessing workflows.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nCreate `Type` column with `Even`/`Odd` from `Number` using apply and print as CSV without index.",
+    "constraints": [
+      "Use Python Pandas/NumPy",
+      "Return/print requested transformed output"
+    ],
+    "hints": [
+      "Understand the transformation first, then apply vectorized operations.",
+      "Use built-in Pandas operations instead of manual loops whenever possible.",
+      "Verify output shape/format exactly before printing."
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import pandas as pd\nimport numpy as np\n\n# Implement the required transformation and print output\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "Number,Type\n2,Even\n5,Odd",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "pandas",
+      "medium",
+      "preprocessing"
+    ]
+  },
+  {
+    "title": "The Balancer (SMOTE)",
+    "description": "Balance minority class samples using SMOTE-style oversampling. This is an advanced ML engineering problem.",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nUsing `imblearn.over_sampling.SMOTE`, rebalance an imbalanced binary target where majority=90 and minority=10. Print resulting class counts as `0:count` and `1:count`.",
+    "constraints": [
+      "Use Python and appropriate ML/preprocessing library",
+      "Show exact requested output format"
+    ],
+    "hints": [
+      "Start from the right library/tool for this task (SMOTE/PCA/KMeans/GridSearch/etc.).",
+      "Fit on training-style data, then transform/predict and format output.",
+      "Validate deterministic output formatting before printing final answer."
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import numpy as np\nimport pandas as pd\n\n# Implement the advanced workflow and print requested result\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "0:90\n1:90",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "hard",
+      "machine-learning",
+      "modeling"
+    ]
+  },
+  {
+    "title": "The Normalizer (Log Transformation)",
+    "description": "Reduce right skew using log transformation. This is an advanced ML engineering problem.",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nApply `np.log1p` to Income values `[50000, 60000, 1000000000]` and print rounded values to 1 decimal.",
+    "constraints": [
+      "Use Python and appropriate ML/preprocessing library",
+      "Show exact requested output format"
+    ],
+    "hints": [
+      "Start from the right library/tool for this task (SMOTE/PCA/KMeans/GridSearch/etc.).",
+      "Fit on training-style data, then transform/predict and format output.",
+      "Validate deterministic output formatting before printing final answer."
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import numpy as np\nimport pandas as pd\n\n# Implement the advanced workflow and print requested result\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "10.8\n11.0\n20.7",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "hard",
+      "machine-learning",
+      "modeling"
+    ]
+  },
+  {
+    "title": "The Interaction Maker (Polynomial Features)",
+    "description": "Generate polynomial and interaction features. This is an advanced ML engineering problem.",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nUse `PolynomialFeatures(degree=2)` on A=2, B=3 and print transformed row as space-separated values.",
+    "constraints": [
+      "Use Python and appropriate ML/preprocessing library",
+      "Show exact requested output format"
+    ],
+    "hints": [
+      "Start from the right library/tool for this task (SMOTE/PCA/KMeans/GridSearch/etc.).",
+      "Fit on training-style data, then transform/predict and format output.",
+      "Validate deterministic output formatting before printing final answer."
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import numpy as np\nimport pandas as pd\n\n# Implement the advanced workflow and print requested result\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "1 2 3 4 6 9",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "hard",
+      "machine-learning",
+      "modeling"
+    ]
+  },
+  {
+    "title": "The Regularizer (Lasso vs. Ridge)",
+    "description": "Use Lasso to identify zeroed-out coefficients. This is an advanced ML engineering problem.",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nTrain Lasso on synthetic data and print names of features whose coefficients are exactly zero.",
+    "constraints": [
+      "Use Python and appropriate ML/preprocessing library",
+      "Show exact requested output format"
+    ],
+    "hints": [
+      "Start from the right library/tool for this task (SMOTE/PCA/KMeans/GridSearch/etc.).",
+      "Fit on training-style data, then transform/predict and format output.",
+      "Validate deterministic output formatting before printing final answer."
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import numpy as np\nimport pandas as pd\n\n# Implement the advanced workflow and print requested result\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "f3\nf7",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "hard",
+      "machine-learning",
+      "modeling"
+    ]
+  },
+  {
+    "title": "The Tuner (GridSearchCV)",
+    "description": "Tune KNN hyperparameters with cross-validation. This is an advanced ML engineering problem.",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nFind best `n_neighbors` among `[3,5,7]` via `GridSearchCV` and print chosen value.",
+    "constraints": [
+      "Use Python and appropriate ML/preprocessing library",
+      "Show exact requested output format"
+    ],
+    "hints": [
+      "Start from the right library/tool for this task (SMOTE/PCA/KMeans/GridSearch/etc.).",
+      "Fit on training-style data, then transform/predict and format output.",
+      "Validate deterministic output formatting before printing final answer."
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import numpy as np\nimport pandas as pd\n\n# Implement the advanced workflow and print requested result\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "5",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "hard",
+      "machine-learning",
+      "modeling"
+    ]
+  },
+  {
+    "title": "The Ensembler (Random Forest)",
+    "description": "Train Random Forest and inspect feature importance ranking. This is an advanced ML engineering problem.",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nTrain RandomForest on sample feature set and print sorted feature importances in `name:value` format.",
+    "constraints": [
+      "Use Python and appropriate ML/preprocessing library",
+      "Show exact requested output format"
+    ],
+    "hints": [
+      "Start from the right library/tool for this task (SMOTE/PCA/KMeans/GridSearch/etc.).",
+      "Fit on training-style data, then transform/predict and format output.",
+      "Validate deterministic output formatting before printing final answer."
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import numpy as np\nimport pandas as pd\n\n# Implement the advanced workflow and print requested result\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "Income:0.6\nDebt:0.3\nAge:0.1",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "hard",
+      "machine-learning",
+      "modeling"
+    ]
+  },
+  {
+    "title": "The Forecaster (Rolling Windows)",
+    "description": "Create rolling mean feature for time series trend. This is an advanced ML engineering problem.",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nCompute 3-day rolling mean for Sales `[10,20,30,40,50]` and print values line by line using `NaN` for unavailable windows.",
+    "constraints": [
+      "Use Python and appropriate ML/preprocessing library",
+      "Show exact requested output format"
+    ],
+    "hints": [
+      "Start from the right library/tool for this task (SMOTE/PCA/KMeans/GridSearch/etc.).",
+      "Fit on training-style data, then transform/predict and format output.",
+      "Validate deterministic output formatting before printing final answer."
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import numpy as np\nimport pandas as pd\n\n# Implement the advanced workflow and print requested result\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "NaN\nNaN\n20.0\n30.0\n40.0",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "hard",
+      "machine-learning",
+      "modeling"
+    ]
+  },
+  {
+    "title": "The Linguist (TF-IDF)",
+    "description": "Convert documents to TF-IDF matrix representation. This is an advanced ML engineering problem.",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nBuild TF-IDF matrix for documents `[\"I love data\", \"Data is great\"]` and print vocabulary in sorted order.",
+    "constraints": [
+      "Use Python and appropriate ML/preprocessing library",
+      "Show exact requested output format"
+    ],
+    "hints": [
+      "Start from the right library/tool for this task (SMOTE/PCA/KMeans/GridSearch/etc.).",
+      "Fit on training-style data, then transform/predict and format output.",
+      "Validate deterministic output formatting before printing final answer."
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import numpy as np\nimport pandas as pd\n\n# Implement the advanced workflow and print requested result\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "data\ngreat\nis\nlove",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "hard",
+      "machine-learning",
+      "modeling"
+    ]
+  },
+  {
+    "title": "The Compressor (PCA)",
+    "description": "Reduce dimensions with PCA while preserving core variance. This is an advanced ML engineering problem.",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nReduce synthetic matrix of shape `(100,10)` into 2 principal components and print resulting shape as `rows,cols`.",
+    "constraints": [
+      "Use Python and appropriate ML/preprocessing library",
+      "Show exact requested output format"
+    ],
+    "hints": [
+      "Start from the right library/tool for this task (SMOTE/PCA/KMeans/GridSearch/etc.).",
+      "Fit on training-style data, then transform/predict and format output.",
+      "Validate deterministic output formatting before printing final answer."
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import numpy as np\nimport pandas as pd\n\n# Implement the advanced workflow and print requested result\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "100,2",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "hard",
+      "machine-learning",
+      "modeling"
+    ]
+  },
+  {
+    "title": "The Clusterer (K-Means)",
+    "description": "Assign cluster labels using K-Means. This is an advanced ML engineering problem.",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nCluster sample customer points into 3 groups with KMeans and print labels count for each cluster as `label:count` lines.",
+    "constraints": [
+      "Use Python and appropriate ML/preprocessing library",
+      "Show exact requested output format"
+    ],
+    "hints": [
+      "Start from the right library/tool for this task (SMOTE/PCA/KMeans/GridSearch/etc.).",
+      "Fit on training-style data, then transform/predict and format output.",
+      "Validate deterministic output formatting before printing final answer."
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "import numpy as np\nimport pandas as pd\n\n# Implement the advanced workflow and print requested result\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "0:2\n1:2\n2:2",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "data-science",
+      "python",
+      "hard",
+      "machine-learning",
+      "modeling"
+    ]
+  },
+  {
+    "title": "The Hello World (Basic Completion)",
+    "description": "Send a basic prompt to a mock LLM API and return response text. Build foundational LLM application intuition.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nWrite a function that sends `What is the capital of France?` to a mock LLM API and returns response content.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "Create a client call wrapper",
+      "Set model and messages structure",
+      "Return only response content"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "The capital of France is Paris.",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "easy",
+      "llm"
+    ]
+  },
+  {
+    "title": "The Persona (System Roles)",
+    "description": "Build system+user messages for behavior control. Build foundational LLM application intuition.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nConstruct message list with system: `You are a helpful coding assistant` and user: `How do I print in Python?`",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "System role controls behavior",
+      "User role holds request",
+      "Return list of two dicts"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "[{\"role\": \"system\", \"content\": \"You are a helpful coding assistant\"}, {\"role\": \"user\", \"content\": \"How do I print in Python?\"}]",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "easy",
+      "llm"
+    ]
+  },
+  {
+    "title": "The Tokenizer (Cost Calculator)",
+    "description": "Estimate token count and API cost from word count. Build foundational LLM application intuition.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nGiven `word_count = 1000`, estimate tokens using 0.75 ratio and cost at $0.002 per 1k tokens.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "tokens ≈ words / 0.75",
+      "cost = tokens/1000 * price",
+      "Format to 4 decimals"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "0.0026",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "easy",
+      "llm"
+    ]
+  },
+  {
+    "title": "The Thermostat (Temperature)",
+    "description": "Choose deterministic temperature for critical domains. Build foundational LLM application intuition.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nFor a medical diagnosis bot, choose between temperature 0.0 and 1.0.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "Medical requires consistency",
+      "Lower randomness is safer",
+      "Return numeric value"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "0.0",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "easy",
+      "llm"
+    ]
+  },
+  {
+    "title": "The Translator (Text to Vector)",
+    "description": "Convert text to embedding vector. Build foundational LLM application intuition.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nUse a mock embedding function to convert `Apple` into a 3-float vector.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "Return list of 3 floats",
+      "Any deterministic values are fine",
+      "Output in Python-list format"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "[0.12, -0.45, 0.88]",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "easy",
+      "llm"
+    ]
+  },
+  {
+    "title": "The Matchmaker (Cosine Similarity)",
+    "description": "Compute simple similarity from vectors. Build foundational LLM application intuition.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nGiven v1=[1,1], v2=[1,1], compute dot-product similarity.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "dot = sum(a*b)",
+      "(1*1)+(1*1)",
+      "Return integer"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "2",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "easy",
+      "llm"
+    ]
+  },
+  {
+    "title": "The Chunker (Text Splitting)",
+    "description": "Split text with chunk overlap. Build foundational LLM application intuition.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nSplit `A B C D E F` into chunks size=3 overlap=1.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "Move window by size-overlap",
+      "Preserve overlap token",
+      "Return list of chunk strings"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "['A B C', 'C D E', 'E F']",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "easy",
+      "llm"
+    ]
+  },
+  {
+    "title": "The Search Engine (Semantic Search)",
+    "description": "Choose semantically closest item from candidates. Build foundational LLM application intuition.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nGiven query Fruit and items Apple/Car/Phone, return top semantic match.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "Fruit aligns with edible item",
+      "Use highest conceptual similarity",
+      "Return item string"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "Apple",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "easy",
+      "llm"
+    ]
+  },
+  {
+    "title": "The Sentiment Analyzer",
+    "description": "Classify text sentiment with a pipeline-like interface. Build foundational LLM application intuition.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nClassify `I hate bugs` using pseudo sentiment pipeline.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "Negative expression words",
+      "Return label and high score",
+      "Use dict output"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "{'label': 'NEGATIVE', 'score': 0.99}",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "easy",
+      "llm"
+    ]
+  },
+  {
+    "title": "The Summarizer",
+    "description": "Summarize a sentence to key facts. Build foundational LLM application intuition.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nSummarize text about Jupiter into concise sentence.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "Preserve core fact",
+      "Remove extra details",
+      "Return one line summary"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "Jupiter is the largest planet in the Solar System.",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "easy",
+      "llm"
+    ]
+  },
+  {
+    "title": "The Zero-Shot Classifier",
+    "description": "Pick best label from candidate set without task-specific training. Build foundational LLM application intuition.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nClassify `The recipe calls for eggs` into [Sports, Food].",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "Recipe context implies food",
+      "Choose best semantic label",
+      "Return label only"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "Food",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "easy",
+      "llm"
+    ]
+  },
+  {
+    "title": "The Visionary (Image-to-Text)",
+    "description": "Return a caption for an image input. Build foundational LLM application intuition.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nInput image of cat, output short description.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "Caption should describe object and context",
+      "Keep concise",
+      "Return plain text"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "A cute cat sitting on a sofa.",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "easy",
+      "llm"
+    ]
+  },
+  {
+    "title": "The Hallucination Checker",
+    "description": "Force model to say unknown when context lacks answer. Build foundational LLM application intuition.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nCreate prompt policy: answer only from context else `I don't know.`",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "Add strict instruction",
+      "Block unsupported claims",
+      "Return fallback string"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "I don't know.",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "easy",
+      "llm"
+    ]
+  },
+  {
+    "title": "The Memory Manager (Context Window)",
+    "description": "Trim chat history to fit context limit. Build foundational LLM application intuition.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nFrom [Msg1..Msg5] keep latest 3 messages.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "Use FIFO removal",
+      "Keep most recent context",
+      "Return final list"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "['Msg3', 'Msg4', 'Msg5']",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "easy",
+      "llm"
+    ]
+  },
+  {
+    "title": "The Chain (Sequential Logic)",
+    "description": "Compose output of one step into next step. Build foundational LLM application intuition.",
+    "difficulty": "easy",
+    "instructions_markdown": "## Problem Statement\n\nStep1 Hello->World, Step2 World->WORLD. Return final output.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "Feed previous output",
+      "Apply uppercase transform",
+      "Return final string"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "WORLD",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "easy",
+      "llm"
+    ]
+  },
+  {
+    "title": "The Retriever (Semantic Search)",
+    "description": "Retrieve top relevant document using conceptual similarity scoring. Focus on RAG, tools, and evaluation workflows.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nGiven docs [Apple is red, Sky is blue, Grass is green] and query `What color is the sky?`, return top-1 doc.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "Map query to semantic intent",
+      "Score each document",
+      "Return highest match"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "Sky is blue",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "medium",
+      "rag"
+    ]
+  },
+  {
+    "title": "The Hybrid Search (Keywords + Vectors)",
+    "description": "Combine keyword and vector rankings into one deduplicated result list. Focus on RAG, tools, and evaluation workflows.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nMerge Keyword=[DocA,DocB,DocC] and Vector=[DocB,DocD,DocA] into unique ordered set.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "Preserve first appearance order",
+      "Deduplicate duplicates",
+      "Return combined list"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "['DocA', 'DocB', 'DocC', 'DocD']",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "medium",
+      "rag"
+    ]
+  },
+  {
+    "title": "The Re-Ranker (Cross-Encoder)",
+    "description": "Sort retrieved docs by re-ranker score. Focus on RAG, tools, and evaluation workflows.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nGiven scores {DocA:0.9, DocB:0.2, DocC:0.85}, return sorted docs descending.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "Sort by value descending",
+      "Keep keys only",
+      "Return ordered list"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "['DocA', 'DocC', 'DocB']",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "medium",
+      "rag"
+    ]
+  },
+  {
+    "title": "The Citations Builder",
+    "description": "Format retrieved documents into source-labeled context block. Focus on RAG, tools, and evaluation workflows.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nFormat docs [Text A, Text B] as source lines.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "Enumerate from 1",
+      "Label each chunk",
+      "Join with newlines"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "Source 1: Text A\nSource 2: Text B",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "medium",
+      "rag"
+    ]
+  },
+  {
+    "title": "The Tool User (Function Calling)",
+    "description": "Describe callable tool schema for LLM function calling. Focus on RAG, tools, and evaluation workflows.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nCreate JSON schema for `calculate_tax(price, rate)` with numeric parameters.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "Include name and description",
+      "Define object parameters",
+      "Mark required fields"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "{'name':'calculate_tax','parameters':{'type':'object','properties':{'price':{'type':'number'},'rate':{'type':'number'}},'required':['price','rate']}}",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "medium",
+      "rag"
+    ]
+  },
+  {
+    "title": "The Router (Agent Logic)",
+    "description": "Route query to appropriate tool using rule-based logic. Focus on RAG, tools, and evaluation workflows.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nIf query contains weather -> API_Tool, contains calculate -> Math_Tool, else Chat_Tool.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "Lowercase query before checks",
+      "Check keywords in order",
+      "Return tool name"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "API_Tool",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "medium",
+      "rag"
+    ]
+  },
+  {
+    "title": "The Structured Output (JSON Mode)",
+    "description": "Force extraction output to strict JSON shape. Focus on RAG, tools, and evaluation workflows.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nFrom bio `John is 25 years old.`, return pure JSON with Name and Age.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "No extra text",
+      "Keys must match schema",
+      "Age should be integer"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "{\"Name\": \"John\", \"Age\": 25}",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "medium",
+      "rag"
+    ]
+  },
+  {
+    "title": "The Evaluator (Ragas)",
+    "description": "Score answer faithfulness against context. Focus on RAG, tools, and evaluation workflows.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nContext: Paris is in France. Answer: Paris is in Germany. Return faithfulness score 0/1.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "Contradiction means unfaithful",
+      "Score binary",
+      "Return integer score"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "0",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "medium",
+      "rag"
+    ]
+  },
+  {
+    "title": "The LoRA Adapter (PEFT)",
+    "description": "Compute trainable percentage in LoRA setup. Focus on RAG, tools, and evaluation workflows.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nModel params=1000, LoRA params=10. Return percentage trained.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "ratio = trainable/total",
+      "Multiply by 100",
+      "Format with percent"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "1%",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "medium",
+      "rag"
+    ]
+  },
+  {
+    "title": "The Token Streamer (UX)",
+    "description": "Yield partial outputs incrementally for streaming UX. Focus on RAG, tools, and evaluation workflows.",
+    "difficulty": "medium",
+    "instructions_markdown": "## Problem Statement\n\nWrite generator that yields Hello, space, World with delays.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "Use `yield` keyword",
+      "Preserve order",
+      "Return concatenation behavior"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "Hello World",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "medium",
+      "rag"
+    ]
+  },
+  {
+    "title": "The GraphRAG Builder (Knowledge Graphs)",
+    "description": "Extract subject-predicate-object triplets for graph indexing. Focus on production-scale optimization and safety.",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nFrom `Steve Jobs co-founded Apple in 1976.`, output (S,P,O) triplets.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "Identify entities first",
+      "Then relation verbs",
+      "Return normalized tuples"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "[(\"Steve Jobs\", \"CO_FOUNDED\", \"Apple\"), (\"Apple\", \"FOUNDED_IN\", \"1976\")]",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "hard",
+      "systems"
+    ]
+  },
+  {
+    "title": "The HyDE (Hypothetical Document Embeddings)",
+    "description": "Implement HyDE flow for better retrieval query representation. Focus on production-scale optimization and safety.",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nDescribe/run flow: query -> hypothetical answer doc -> embedding -> vector search.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "Generate synthetic answer first",
+      "Embed synthetic doc",
+      "Use embedding for retrieval"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "generate -> embed -> search",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "hard",
+      "systems"
+    ]
+  },
+  {
+    "title": "The Tree of Thoughts (ToT)",
+    "description": "Keep best reasoning branch using scored candidates. Focus on production-scale optimization and safety.",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nCandidates Python(0.9), Java(0.5), SQL(0.1). Keep best and expand next.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "Sort by score",
+      "Retain top branch",
+      "Discard low branches"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "Write Python",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "hard",
+      "systems"
+    ]
+  },
+  {
+    "title": "The Quantizer (GGUF/GGML)",
+    "description": "Calculate memory footprint after quantization. Focus on production-scale optimization and safety.",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nCompute VRAM for 7B params at 4-bit precision.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "size = params * bits / 8",
+      "7e9*4/8 bytes",
+      "Convert bytes to GB"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "3.5 GB",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "hard",
+      "systems"
+    ]
+  },
+  {
+    "title": "The PagedAttention Manager (vLLM)",
+    "description": "Compute number of KV cache pages required. Focus on production-scale optimization and safety.",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nIf request needs 12 tokens and page size is 4 tokens, how many pages?",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "pages = ceil(tokens/page)",
+      "12/4 exact division",
+      "Return integer pages"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "3",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "hard",
+      "systems"
+    ]
+  },
+  {
+    "title": "The Speculative Decoder",
+    "description": "Accept matching draft prefix and reject divergence. Focus on production-scale optimization and safety.",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nDraft [The,cat,sat], verified [The,cat,slept]. Return accepted prefix.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "Compare token by token",
+      "Stop at first mismatch",
+      "Return accepted tokens"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "['The', 'cat']",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "hard",
+      "systems"
+    ]
+  },
+  {
+    "title": "The Batcher (Continuous Batching)",
+    "description": "Update active batch by replacing completed slot with queued request. Focus on production-scale optimization and safety.",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nSlot1 A done, Slot2 B generating, Queue[C]. Eject A and insert C.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "Remove completed request",
+      "Pop next queued request",
+      "Fill empty slot"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "Slot1:C, Slot2:B",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "hard",
+      "systems"
+    ]
+  },
+  {
+    "title": "The DPO Trainer (Direct Preference Optimization)",
+    "description": "Format preference dataset rows for chosen/rejected responses. Focus on production-scale optimization and safety.",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nGiven prompt + good/bad answers, output DPO record dictionary.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "Keys: prompt/chosen/rejected",
+      "Keep raw text values",
+      "Return JSON-like dict"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "{'prompt': 'Write a poem', 'chosen': 'Roses are red...', 'rejected': 'I am an AI.'}",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "hard",
+      "systems"
+    ]
+  },
+  {
+    "title": "The Guardrail (Prompt Injection Defense)",
+    "description": "Block jailbreak-like prompts via similarity threshold rule. Focus on production-scale optimization and safety.",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nIf jailbreak similarity > 0.8 for input `DAN Mode...`, return action.",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "Compare against jailbreak signatures",
+      "Threshold-based blocking",
+      "Return action label"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "Block Request",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "hard",
+      "systems"
+    ]
+  },
+  {
+    "title": "The Multi-Agent Orchestrator",
+    "description": "Route control back to coder when reviewer reports bug. Focus on production-scale optimization and safety.",
+    "difficulty": "hard",
+    "instructions_markdown": "## Problem Statement\n\nManager asks build app, reviewer finds error line 5. Which agent next?",
+    "constraints": [
+      "Use Python",
+      "Return/print output exactly as requested"
+    ],
+    "hints": [
+      "Bug means revise code",
+      "Activate code-fixing actor",
+      "Return agent name"
+    ],
+    "starter_code": [
+      {
+        "language": "python",
+        "code": "# Write your solution here\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "",
+        "expected_output": "Coder Agent",
+        "is_hidden": false
+      }
+    ],
+    "tags": [
+      "ai-engineer",
+      "python",
+      "hard",
+      "systems"
+    ]
+  }
+]
