@@ -7,6 +7,10 @@
   <img src="https://img.shields.io/badge/Python-3.11+-3776AB?style=flat-square&logo=python" alt="Python" />
 </div>
 
+## 🌍 Live Website
+
+[https://codepath-ai-frontend.onrender.com/](https://codepath-ai-frontend.onrender.com/)
+
 ## 🎯 Overview
 
 CodePath AI is a production-ready web application designed to help beginners learn programming through:
@@ -328,7 +332,3 @@ For questions or issues, please open a GitHub issue or contact the team.
 <div align="center">
   Built with ❤️ for aspiring developers
 </div>
-
-## 🌍 Live Website
-
-[https://codepath-ai-frontend.onrender.com/](https://codepath-ai-frontend.onrender.com/)
