@@ -328,3 +328,7 @@ For questions or issues, please open a GitHub issue or contact the team.
 <div align="center">
   Built with ❤️ for aspiring developers
 </div>
+
+## 🌍 Live Website
+
+[https://codepath-ai-frontend.onrender.com/](https://codepath-ai-frontend.onrender.com/)
